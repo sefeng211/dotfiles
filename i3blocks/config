@@ -1,5 +1,5 @@
 [CRYPTO_BTC]
-command=/home/saber/.local/workspace/TechLab/scripts/crypto_luke.sh
+command=/home/saber/.local/workspace/repos/dotfiles/scripts/crypto_luke.sh
 interval=5
 
 [DISK]
