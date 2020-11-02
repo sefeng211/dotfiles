@@ -79,7 +79,7 @@ Plug 'christoomey/vim-tmux-navigator'
 " Able to toggle the split to maximize it
 Plug 'szw/vim-maximizer'
 " Display the color of the color codes
-Plug 'ap/vim-css-color'
+"Plug 'ap/vim-css-color'
 
 "  == Appearance ==
 " Enhancement for statusbar
@@ -157,7 +157,7 @@ nmap <leader>wl <Plug>VimwikiToggleListItem
 let g:vimwiki_listsyms = ' ○◐●✓'
 
 " == deoplete ==
-"let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup = 1
 
 "" disable deoplete for c and cpp
 autocmd FileType c,cpp,rust,hpp,h
@@ -178,6 +178,7 @@ let g:ycm_filetype_whitelist = {
             \ }
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_hover_popup = -1
+let g:ycm_auto_hover = -1
 let g:ycm_min_num_identifier_candidate_chars = 3
 let g:ycm_max_num_identifier_candidates = 5
 let g:ycm_max_num_candidates = 10
@@ -349,12 +350,10 @@ nnoremap <silent><C-w>z :MaximizerToggle<CR>
 vnoremap <silent><C-w>z :MaximizerToggle<CR>gv
 inoremap <silent><C-w>z <C-o>:MaximizerToggle<CR>
 
-nnoremap <Leader>wu :update<CR>
 nnoremap <Leader>q :bd!<CR>
 
 noremap <Leader>sl :set lines=40<CR>
 
-noremap <Leader>pc :AsyncTask project-build-firefox<CR>
 
 nnoremap <silent> <C-w>T :tab split<CR>
 
@@ -365,6 +364,9 @@ command! Config execute ":e $MYVIMRC"
 
 nnoremap <leader>gt :tab term ++close tig<CR>
 
+noremap <Leader>wu :vertical resize +10<CR>
+noremap <Leader>wi :vertical resize -10<CR>
+
 " <Space>w
 noremap <Space>wd :!wd<Space>
 
@@ -372,6 +374,18 @@ noremap <Space>wd :!wd<Space>
 map <Space>n :bn<cr>
 map <Space>p :bp<cr>
 map <Space>d :bd<cr>
+
+" Quickfix
+noremap <leader>cn :cnext<CR>
+noremap <leader>cl :clast<CR>
+noremap <leader>co :copen<CR>
+noremap <leader>cs :cfirst<CR> :cnext<CR>
+noremap <leader>cp :cprevious<CR>
+noremap <leader>ce :cclose<CR>
+
+" AsyncTask
+noremap <Leader>pac :AsyncTask project-build<CR>
+noremap <Leader>par :AsyncTask project-run<CR>
 
 " colorscheme nord
 "=============== Custom Configuration ==========
