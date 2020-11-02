@@ -1,0 +1,27 @@
+[CRYPTO_BTC]
+command=/home/saber/.local/workspace/TechLab/scripts/crypto_luke.sh
+interval=5
+
+[DISK]
+command=df -h / | awk '/\//{ printf(" 💾%4s \n", $4 ) }'
+interval=2
+color=#C9E3DB
+
+[BATTERY]
+command=~/.config/i3blocks/battery/battery_info.sh
+interval=3
+
+[CPU]
+full_text= 0.00% @ +00.0°C
+command=~/.config/i3blocks/cpu/cpu_info.sh
+interval=2
+color=#00B4EB
+
+[MEM]
+command=free -h | awk '/Mem:/ { printf(" 🔮 %5s/%s \n", $3, $2) }'
+interval=1
+color=#FEC925
+
+[TIME_DATE]
+command=date +" %a, %d %b - %H:%M:%S"
+interval=1
