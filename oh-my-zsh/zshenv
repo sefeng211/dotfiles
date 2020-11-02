@@ -1,0 +1,12 @@
+export NNN_PLUG='i:imgview;p:preview-tabbed;f:fzcd;t:preview-tui'
+export NNN_BMS='i:~/.local/pics;w:~/.local/wiki;v:~/.local/workspace/videos'
+export NNN_SEL='/tmp/.sel'
+export NNN_FIFO='/tmp/nnn.fifo'
+
+export PATH="/home/sefeng/.mozbuild/git-cinnabar:$PATH"
+export PATH="$PATH:~/.local/bin"
+
+export SCCACHE_DIR=~/.cache/sccache
+export SCCACHE_CACHE_SIZE="80G"
+
+export BAT_THEME="Solarized (light)"
