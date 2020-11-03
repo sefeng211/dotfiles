@@ -195,7 +195,6 @@ let g:mkdp_browser = 'firefox-nightly'
 
 " == vim-clang-format ==
 let g:clang_format#code_style = "mozilla"
-let g:clang_format#command = "~/.mozbuild/clang/bin/clang-format"
 
 " == vim-pastebins ==
 let g:enabled_pastebin_service = "mozilla"
@@ -376,12 +375,12 @@ map <Space>p :bp<cr>
 map <Space>d :bd<cr>
 
 " Quickfix
-noremap <leader>cn :cnext<CR>
-noremap <leader>cl :clast<CR>
-noremap <leader>co :copen<CR>
-noremap <leader>cs :cfirst<CR> :cnext<CR>
-noremap <leader>cp :cprevious<CR>
-noremap <leader>ce :cclose<CR>
+noremap <leader>tn :cnext<CR>
+noremap <leader>tl :clast<CR>
+noremap <leader>to :copen<CR>
+noremap <leader>ts :cfirst<CR> :cnext<CR>
+noremap <leader>tp :cprevious<CR>
+noremap <leader>te :cclose<CR>
 
 " AsyncTask
 noremap <Leader>pac :AsyncTask project-build<CR>
