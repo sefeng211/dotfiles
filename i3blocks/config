@@ -1,3 +1,7 @@
+[MAIL]
+command=/home/saber/.local/workspace/repos/dotfiles/scripts/mailbox
+interval=5
+
 [CRYPTO_BTC]
 command=/home/saber/.local/workspace/repos/dotfiles/scripts/crypto_luke.sh
 interval=5
