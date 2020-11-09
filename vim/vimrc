@@ -50,6 +50,8 @@ Plug 'bfrg/vim-glfw-syntax'
 " Plug 'lifepillar/vim-solarized8'
 Plug 'lifepillar/vim-gruvbox8'
 Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'jsit/toast.vim'
+Plug 'NLKNguyen/papercolor-theme'
 
 " Maybe the best auto-completion framework
 if has('nvim')
@@ -477,9 +479,10 @@ set shortmess+=c "Disable some annoying error message from deoplete
 " ColorScheme gruvbox {{{
 let g:gruvbox_transp_bg = 1
 syntax on
-set background=light
-"colorscheme gruvbox8_soft
+set background=dark
 colorscheme gruvbox8
+" colorscheme toast
+"colorscheme PaperColor
 " }}}
 
 " vimwiki colorscheme {{{
