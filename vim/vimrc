@@ -26,6 +26,8 @@ Plug 'deoplete-plugins/deoplete-jedi'
 Plug 'deathlyfrantic/deoplete-spell'
 " Python PEP8 Indentation
 Plug 'Vimjas/vim-python-pep8-indent'
+Plug 'psf/black', { 'branch': 'stable' }
+
 " Enhancement for tags
 " Plug 'ludovicchabant/vim-gutentags'
 " Awesome tagbar
@@ -46,7 +48,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 Plug 'bfrg/vim-glfw-syntax'
 " Colorscheme
 " Plug 'joshdick/onedark.vim'
-" Plug 'arcticicestudio/nord-vim'
+Plug 'arcticicestudio/nord-vim'
 " Plug 'lifepillar/vim-solarized8'
 Plug 'lifepillar/vim-gruvbox8'
 Plug 'shinchu/lightline-gruvbox.vim'
@@ -233,7 +235,7 @@ let g:taskwiki_sort_orders={"U": "urgency-,due-"}
 
 " == vim lightline ==
 let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
+      \ 'colorscheme': 'nord',
       \ 'subseparator': { 'left': "❯", 'right': "❮" },
       \ 'mode_map': {
         \ 'n' : 'N',
@@ -388,7 +390,6 @@ noremap <leader>te :cclose<CR>
 noremap <Leader>pac :AsyncTask project-build<CR>
 noremap <Leader>par :AsyncTask project-run<CR>
 
-" colorscheme nord
 "=============== Custom Configuration ==========
 set pyxversion=3
 set encoding=utf-8
@@ -477,14 +478,20 @@ set laststatus=2
 set shortmess+=c "Disable some annoying error message from deoplete
 
 " ColorScheme gruvbox {{{
-let g:gruvbox_transp_bg = 1
-syntax on
-set background=dark
-colorscheme gruvbox8
-" colorscheme toast
-"colorscheme PaperColor
+" let g:gruvbox_transp_bg = 1
+" syntax on
+" set background=dark
+" colorscheme gruvbox8_soft
 " }}}
 
+
+" ColorScheme nord {{{
+syntax on
+colorscheme nord
+" Set the background to be transparent
+hi Normal guibg=NONE ctermbg=NONE
+"}}}
+"
 " vimwiki colorscheme {{{
 hi VimwikiHeader1 guifg=#D79921
 hi VimwikiHeader2 guifg=#689D6A
