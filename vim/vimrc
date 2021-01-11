@@ -74,7 +74,7 @@ Plug 'tools-life/taskwiki'
 " File Viewer inside Vim!
 "Plug 'preservim/nerdtree'
 " Faster movement
-"Plug 'easymotion/vim-easymotion'
+Plug 'easymotion/vim-easymotion'
 " FZF support
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -84,7 +84,10 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'szw/vim-maximizer'
 " Display the color of the color codes
 "Plug 'ap/vim-css-color'
-
+" {{{ ultisnips
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+" }}}
 "  == Appearance ==
 " Enhancement for statusbar
 Plug 'itchyny/lightline.vim'
@@ -153,7 +156,6 @@ let g:leetcode_solution_filetype = 'python'
 let g:vimwiki_list = [{'path': '~/.local/Dropbox/wiki/mozilla/'},
             \ {'path': '~/.local/Dropbox/wiki/personal/'}]
 
-
 let wiki = {}
 let wiki.nested_syntaxes = {'python': 'python', 'c++': 'cpp'}
 
@@ -161,7 +163,7 @@ nmap <leader>wl <Plug>VimwikiToggleListItem
 let g:vimwiki_listsyms = ' ○◐●✓'
 
 " == deoplete ==
-let g:deoplete#enable_at_startup = 1
+"let g:deoplete#enable_at_startup = 1
 
 "" disable deoplete for c and cpp
 autocmd FileType c,cpp,rust,hpp,h
@@ -187,6 +189,15 @@ let g:ycm_min_num_identifier_candidate_chars = 3
 let g:ycm_max_num_identifier_candidates = 5
 let g:ycm_max_num_candidates = 10
 let g:ycm_min_num_of_chars_for_completion = 3
+let g:ycm_language_server =
+            \ [
+            \   {
+            \     'name': 'rust',
+            \     'cmdline': ['rust-analyzer'],
+            \     'filetypes': ['rust'],
+            \     'project_root_files': ['Cargo.toml']
+            \   }
+            \ ]
 map <C-]> :YcmCompleter GoToImprecise<CR>
 
 " == asyncrun ==
@@ -263,8 +274,8 @@ autocmd FileType tin setlocal fileencoding=gb2312
 "Set the filetype for jsm files as js
 autocmd BufRead,BufNewFile *.jsm set filetype=javascript
 " Clang format keybinding
-autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
-autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+autocmd FileType c,cpp,objc,rust nnoremap <buffer><Leader>cf :<C-u>MyFormatCode<CR>
+autocmd FileType c,cpp,objc,rust vnoremap <buffer><Leader>cf :ClangFormat<CR>
 "VIM YAML indentation
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType vim setlocal ts=4 sts=4 sw=4 expandtab
@@ -460,7 +471,6 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
-
 set autoread
 filetype plugin on
 
@@ -503,3 +513,16 @@ hi VimwikiHeader6 guifg=#CC241D
 "
 "
 autocmd! FileType qf setlocal wrap
+
+" {{{ Trick to auto-toggle paste mode
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+function! XTermPasteBegin()
+  set pastetoggle=<Esc>[201~
+  set paste
+  return ""
+endfunction
+" }}}
