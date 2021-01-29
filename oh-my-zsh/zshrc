@@ -127,7 +127,7 @@ alias machd="./mach run --debugger=rr"
 alias machde="./mach run --debugger=rr --disable-e10s"
 
 # Taskwarrior related
-alias in='task add +in'
+#alias in='task add +in'
 
 alias nnn='nnn -e -a -d'
 alias n='nnn -e -a -d'
@@ -140,8 +140,12 @@ alias cat='bat'
 alias opsignin='eval $(op signin sefeng)'
 
 #Taskoo
-alias ttw='tt list c:Work'
-alias ttoday='tt view all today'
+alias in='tt add'
+alias gtd='tt list c:Gtd'
+alias inbox='tt list c:Inbox'
+alias tick='tt list c:tick'
+alias today='tt view all today'
+alias week='tt view all 1weeks'
 
 # Running term in 256 bit mode
 # export TERM=xterm-256color
