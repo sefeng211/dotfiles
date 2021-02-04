@@ -27,7 +27,9 @@ Plug 'deathlyfrantic/deoplete-spell'
 " Python PEP8 Indentation
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'psf/black', { 'branch': 'stable' }
-
+" Eslint
+Plug 'eslint/eslint'
+Plug 'prettier/vim-prettier'
 " Enhancement for tags
 " Plug 'ludovicchabant/vim-gutentags'
 " Awesome tagbar
