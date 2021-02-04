@@ -144,8 +144,15 @@ alias in='tt add'
 alias gtd='tt list c:Gtd'
 alias inbox='tt list c:Inbox'
 alias tick='tt list c:tick'
+alias smd='tt list c:smd'
 alias today='tt view all today'
 alias week='tt view all 1weeks'
+alias anno='tt annotate'
+alias review='tt review'
+
+# Will cd into the top of the current repository
+# or submodule.
+alias grt='cd $(git rev-parse --show-toplevel || echo ".")'
 
 # Running term in 256 bit mode
 # export TERM=xterm-256color
