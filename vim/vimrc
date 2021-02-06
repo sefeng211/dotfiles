@@ -318,6 +318,7 @@ nnoremap <leader>fc :History: <CR>
 nnoremap <leader>fs :History/ <CR>
 nnoremap <leader>fr :History <CR>
 nnoremap <leader>fi :BTags <CR>
+nnoremap <leader>fp :Snippets <CR>
 nnoremap <leader>b :Buffers <CR>
 nnoremap <leader>r :Rg <CR>
 nnoremap <leader>fl :noh <CR>
