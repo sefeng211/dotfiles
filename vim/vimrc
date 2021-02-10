@@ -165,7 +165,7 @@ nmap <leader>wl <Plug>VimwikiToggleListItem
 let g:vimwiki_listsyms = ' ○◐●✓'
 
 " == deoplete ==
-"let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup = 1
 
 "" disable deoplete for c and cpp
 autocmd FileType c,cpp,rust,hpp,h
