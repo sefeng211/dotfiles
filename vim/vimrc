@@ -163,9 +163,9 @@ nmap <leader>wl <Plug>VimwikiToggleListItem
 let g:vimwiki_listsyms = ' ○◐●✓'
 
 " == deoplete ==
-"let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup = 1
 
-"" disable deoplete for c and cpp
+"" disable deoplete for c and cpp to let YCM takes care of them
 autocmd FileType c,cpp,rust,hpp,h
 \ call deoplete#custom#buffer_option('auto_complete', v:false)
 
@@ -180,7 +180,6 @@ let g:ycm_filetype_whitelist = {
             \ "hpp":1,
             \ "cpp":1,
             \ "rust":1,
-            \ "javascript":1,
             \ }
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_hover_popup = -1
