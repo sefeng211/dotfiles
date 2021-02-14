@@ -71,6 +71,9 @@ Plug 'vimwiki/vimwiki'
 " A enhancement for listing taskwarrior tasks inside Vim!
 "Plug 'blindFS/vim-taskwarrior' "Huge performance issue
 Plug 'tools-life/taskwiki'
+
+" nnn file manager
+Plug 'mcchrish/nnn.vim'
 " File Viewer inside Vim!
 "Plug 'preservim/nerdtree'
 " Faster movement
@@ -147,7 +150,8 @@ let g:cpp_class_scope_highlight = 1
 " == fzf ==
 let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6, 'highlight': 'Todo', 'border': 'sharp' } }
 
-
+" == nnn ==
+let g:nnn#layout = { 'window': { 'width': 0.9, 'height': 0.6, 'highlight': 'Debug' } }
 " == leetcode ==
 let g:leetcode_browser = 'firefox-nightly'
 let g:leetcode_solution_filetype = 'python'
