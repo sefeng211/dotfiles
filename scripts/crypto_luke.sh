@@ -9,8 +9,7 @@
 coins="Bitcoin;btc;💰
 Etherium;eth;🕊️
 Monero;xmr;🇲
-Stellar;xlm;🇸
-"
+Stellar;xlm;🇸"
 
 # Directory where currency info is stored.
 dir="${XDG_DATA_HOME:-$HOME/.local/share}/crypto-prices"
@@ -21,6 +20,7 @@ getprices() { # The command to get the desired prices
 	echo "$coins" | while IFS=';' read -r human web icon; do
 		val="$(curl -s "cad.rate.sx/1$web")" &&
 		if [ "$human" == "Stellar" ]; then
+			# Stellar needs to give more decimal places
 			printf "%s;%0.3f;%s\n" $icon $val $human > "$dir/$web"
 		else
 			printf "%s;%0.1f;%s\n" $icon $val $human > "$dir/$web"
