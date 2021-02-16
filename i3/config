@@ -346,22 +346,28 @@ bar {
 	i3bar_command i3bar
 	# status_command i3status
 	status_command i3blocks
+	# status_command while true; do echo "This is my status"; sleep 5; done
+
 	position top
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 	tray_output primary
 #	tray_output eDP1
 
+    	font pango:Noto Sans Mono 12
+
 	bindsym button4 nop
 	bindsym button5 nop
 #   font xft:URWGothic-Book 11
 	strip_workspace_numbers no
+	workspace_min_width 40
 
     colors {
 #        background #222D31
 	background $term_background
         statusline #F9FAF9
-        separator  #454947
+        #statusline #aacc60
+        separator  #629692
 
 #                      border  backgr. text
         focused_workspace  #F9FAF9 #16a085 #292F34
