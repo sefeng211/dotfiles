@@ -8,8 +8,9 @@
 # human-readable name;urlname;icon
 coins="Bitcoin;btc;💰
 Etherium;eth;🕊️
-Monero;xmr;🇲
-Stellar;xlm;🇸"
+ChainLink;link;🔗
+Monero;xmr;🪙
+Stellar;xlm;💶"
 
 # Directory where currency info is stored.
 dir="${XDG_DATA_HOME:-$HOME/.local/share}/crypto-prices"
