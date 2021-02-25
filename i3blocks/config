@@ -3,11 +3,11 @@ command=tt view all today | sed 's/\x1B[@A-Z\\\]^_]\|\x1B\[[0-9:;<=>?]*[-!"#$%&'
 interval=60
 
 [MAIL]
-command=/home/saber/.local/workspace/repos/dotfiles/scripts/mailbox
+command=mailbox
 interval=5
 
 [CRYPTO_BTC]
-command=/home/saber/.local/workspace/repos/dotfiles/scripts/crypto_luke.sh
+command=crypto_luke
 interval=5
 
 [DISK]
