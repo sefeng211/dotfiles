@@ -71,7 +71,8 @@ Plug 'vimwiki/vimwiki'
 " A enhancement for listing taskwarrior tasks inside Vim!
 "Plug 'blindFS/vim-taskwarrior' "Huge performance issue
 Plug 'tools-life/taskwiki'
-
+" Integrate tig into Vim
+Plug 'iberianpig/tig-explorer.vim'
 " nnn file manager
 Plug 'mcchrish/nnn.vim'
 " File Viewer inside Vim!
@@ -201,7 +202,9 @@ let g:ycm_language_server =
             \     'project_root_files': ['Cargo.toml']
             \   }
             \ ]
+
 map <C-]> :YcmCompleter GoToImprecise<CR>
+nnoremap <Leader>cr :YcmCompleter RefactorRename<space>
 
 " == asyncrun ==
 let g:asyncrun_open = 8
@@ -220,6 +223,22 @@ let g:enabled_pastebin_service = "mozilla"
 " == asynctask ==
 let g:asynctasks_term_pos = "tab"
 let g:asynctasks_term_reuse = 1
+let g:asynctasks_template = {}
+let g:asynctasks_template.cargo = [
+			\ "[project-init]",
+			\ "command=cargo update",
+			\ "cwd=<root>",
+			\ "",
+			\ "[project-build]",
+			\ "command=cargo build",
+			\ "cwd=<root>",
+			\ "errorformat=%. %#--> %f:%l:%c",
+			\ "",
+			\ "[project-run]",
+			\ "command=cargo run",
+			\ "cwd=<root>",
+			\ "output=terminal",
+			\ ]
 
 " == Firenvim ==
 if has('nvim')
@@ -333,6 +352,13 @@ nmap cc :Commands<CR>
 nnoremap <leader>sf :SFSearch <CR>
 " SFOpen, search the file in searchfox
 nnoremap <leader>ss :SFOpen <CR>
+
+" == Tig-Explorer ==
+" open tig with current file
+nnoremap <Leader>tT :TigOpenCurrentFile<CR>
+
+" open tig with Project root path
+nnoremap <Leader>tt :TigOpenProjectRootDir<CR>
 
 " Leetcode keybindings
 nnoremap <leader>ll :LeetCodeList<cr>
@@ -530,3 +556,5 @@ function! XTermPasteBegin()
   return ""
 endfunction
 " }}}
+
+hi Terminal guibg=#2E3440
