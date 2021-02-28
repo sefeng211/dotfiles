@@ -494,7 +494,7 @@ bindsym Mod4+p exec "i3-msg 'layout splitv; exec alacritty --config-file ~/.conf
 exec --no-startup-id picom --backend xrender --config ~/.config/compton/compton.conf
 
 # Start fcitx
-exec --no-startup-id fcitx -d
+exec --no-startup-id fcitx5 -d
 
 # Set the wallpaper
 exec --no-startup-id feh --bg-fill ~/.local/wallpaper/slowpoke.jpg
