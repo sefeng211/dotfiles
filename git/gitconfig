@@ -1,0 +1,14 @@
+[cinnabar]
+	version-check = 1597676225
+	helper = /home/saber/.mozbuild/git-cinnabar/git-cinnabar-helper
+[user]
+	email = sean@seanfeng.dev
+[oh-my-zsh]
+	hide-status = 1
+[core]
+	pager = delta
+[delta]
+	syntax-theme = Nord
+	side-by-side = true
+[http]
+	version = HTTP/1.1
