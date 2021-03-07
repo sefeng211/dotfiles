@@ -3,6 +3,7 @@
 	helper = /home/saber/.mozbuild/git-cinnabar/git-cinnabar-helper
 [user]
 	email = sean@seanfeng.dev
+	name = Sean Feng
 [oh-my-zsh]
 	hide-status = 1
 [core]
@@ -11,3 +12,5 @@
 	syntax-theme = Nord
 [http]
 	version = HTTP/1.1
+[interactive]
+    diffFilter = delta --color-only
