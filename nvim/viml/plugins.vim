@@ -1,0 +1,41 @@
+call plug#begin("~/.nvim/plugged")
+" FZF support
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
+Plug 'arcticicestudio/nord-vim'
+Plug 'christoomey/vim-tmux-navigator'
+
+" Use for status bar
+Plug 'nvim-lua/plenary.nvim'
+Plug 'tjdevries/express_line.nvim'
+
+" Telescope!!
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzy-native.nvim'
+
+" Completion
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
+Plug 'mbbill/undotree'
+
+Plug 'szw/vim-maximizer'
+
+" nnn file manager
+Plug 'mcchrish/nnn.vim'
+
+Plug 'scrooloose/nerdcommenter'
+
+" YCM is still soooo goood
+Plug 'ycm-core/YouCompleteMe'
+
+Plug 'kyazdani42/nvim-web-devicons'
+
+Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+
+Plug 'rust-lang/rust.vim'
+
+Plug 'skywind3000/asynctasks.vim'
+Plug 'skywind3000/asyncrun.vim'
+call plug#end()

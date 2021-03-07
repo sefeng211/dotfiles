@@ -73,8 +73,8 @@ plugins=(fzf zsh-autosuggestions z zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-#export EDITOR='nvim'
-export EDITOR='vim'
+export EDITOR='nvim'
+# export EDITOR='vim'
 
 # User configuration
 
@@ -133,7 +133,7 @@ alias machde="./mach run --debugger=rr --disable-e10s"
 alias nnn='nnn -e -a -d'
 alias n='nnn -e -a -d'
 
-#alias vim='nvim'
+alias vim='nvim'
 alias vimdiff="nvim -d"
 alias t="task"
 
