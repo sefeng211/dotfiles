@@ -9,6 +9,8 @@ nnoremap <leader>ff :lua require('functions').fuzzy_find_file()<CR>
 nnoremap <leader>fr :History <CR>
 nnoremap <leader>fc :History: <CR>
 nnoremap <leader>r :Rg <CR>
+nmap // :BLines<CR>
+nmap cc :Commands<CR>
 
 " Telescope
 nnoremap <leader>bb :Buffers<cr>
@@ -35,10 +37,29 @@ noremap <leader>8 8gt
 noremap <leader>9 9gt
 
 " YouCompleteMe(YCM)
-map <C-]> :YcmCompleter GoToImprecise<CR>
+nnoremap <C-]> :YcmCompleter GoToImprecise<CR>
 nnoremap <Leader>cr :YcmCompleter RefactorRename<space>
 
 " AsyncTask
-noremap <Leader>pac :AsyncTask project-build<CR>
-noremap <Leader>par :AsyncTask project-run<CR>
-noremap <Leader>pat :AsyncTask project-test<CR>
+nnoremap <Leader>pac :AsyncTask project-build<CR>
+nnoremap <Leader>par :AsyncTask project-run<CR>
+nnoremap <Leader>pat :AsyncTask project-test<CR>
+
+" deoplete
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" Vimwiki
+nmap <leader>wl <Plug>VimwikiToggleListItem
+
+" A nice trick to do indentation in visual mode
+vnoremap < <gv
+vnoremap > >gv
+
+" *.cpp 和 *.h 间切换
+nnoremap <silent> <Leader>sw :FSHere<cr>
+nnoremap <silent> <Leader>pr :PrettierAsync<cr>
+
+" Toggle maximizing the split
+nnoremap <silent><C-w>z :MaximizerToggle<CR>
+vnoremap <silent><C-w>z :MaximizerToggle<CR>gv
+inoremap <silent><C-w>z <C-o>:MaximizerToggle<CR>

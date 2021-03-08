@@ -16,6 +16,9 @@ set incsearch
 set noshowmode
 set nocompatible
 set completeopt-=preview " Disable the scratch window for completion
+set tabstop=4
+set shiftwidth=4
+set expandtab
 " }}}
 
 " {{{ Colorscheme 
@@ -62,3 +65,54 @@ let g:ycm_language_server =
             \     'project_root_files': ['Cargo.toml']
             \   }
             \ ]
+
+" == asynctask ==
+let g:asynctasks_term_pos = "tab"
+let g:asynctasks_term_reuse = 1
+let g:asynctasks_template = {}
+let g:asynctasks_template.cargo = [
+			\ "[project-init]",
+			\ "command=cargo update",
+			\ "cwd=<root>",
+			\ "",
+			\ "[project-build]",
+			\ "command=cargo build",
+			\ "cwd=<root>",
+			\ "errorformat=%. %#--> %f:%l:%c",
+			\ "",
+			\ "[project-run]",
+			\ "command=cargo run",
+			\ "cwd=<root>",
+			\ "output=terminal",
+			\ ]
+
+" == vimwiki ==
+let g:vimwiki_list = [{'path': '~/.local/Dropbox/wiki/mozilla/'},
+            \ {'path': '~/.local/Dropbox/wiki/personal/'}]
+
+let wiki = {}
+let wiki.nested_syntaxes = {'python': 'python', 'c++': 'cpp'}
+
+let g:vimwiki_listsyms = ' ○◐●✓'
+
+" == Firenvim ==
+if has('nvim')
+    let g:firenvim_config = {
+        \ 'globalSettings': {
+            \ 'alt': 'all',
+        \  },
+        \ 'localSettings': {
+            \ '.*': {
+                \ 'cmdline': 'neovim',
+                \ 'priority': 0,
+                \ 'selector': 'textarea',
+                \ 'takeover': 'never',
+            \ },
+        \ }
+    \ }
+    let fc = g:firenvim_config['localSettings']
+    let fc['https?://[^/]+\.zhihu\.com/*'] = { 'takeover': 'never', 'priority': 1 }
+    let fc['https?://chat\.mozilla\.org/*'] = { 'takeover': 'never', 'priority': 1 }
+    let fc['https?://app\.slack\.com/*'] = { 'takeover': 'never', 'priority': 1 }
+    let fc['https?://app\.element\.io/*'] = { 'takeover': 'never', 'priority': 1 }
+endif

@@ -345,9 +345,6 @@ nnoremap <leader>b :Buffers <CR>
 nnoremap <leader>r :Rg <CR>
 nnoremap <leader>fl :noh <CR>
 
-nmap // :BLines<CR>
-nmap cc :Commands<CR>
-
 " SFSearch, search the word in searchfox
 nnoremap <leader>sf :SFSearch <CR>
 " SFOpen, search the file in searchfox
@@ -557,3 +554,4 @@ endfunction
 " }}}
 
 hi Terminal guibg=#2E3440
+

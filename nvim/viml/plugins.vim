@@ -25,8 +25,6 @@ Plug 'szw/vim-maximizer'
 " nnn file manager
 Plug 'mcchrish/nnn.vim'
 
-Plug 'scrooloose/nerdcommenter'
-
 " YCM is still soooo goood
 Plug 'ycm-core/YouCompleteMe'
 
@@ -36,6 +34,14 @@ Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
 Plug 'rust-lang/rust.vim'
 
-Plug 'skywind3000/asynctasks.vim'
 Plug 'skywind3000/asyncrun.vim'
+Plug 'skywind3000/asynctasks.vim'
+
+" Switch between source and header files
+Plug 'derekwyatt/vim-fswitch'
+
+Plug 'szw/vim-maximizer'
+
+Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-commentary'
 call plug#end()
