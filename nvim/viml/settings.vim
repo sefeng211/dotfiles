@@ -9,7 +9,7 @@ set nowrap
 set undodir=~/.nvim/undodir
 set undofile
 set smartindent
-set smartcase
+set ignorecase
 set noswapfile
 set nobackup
 set incsearch

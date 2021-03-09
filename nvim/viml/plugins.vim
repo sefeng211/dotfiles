@@ -10,6 +10,12 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'tjdevries/express_line.nvim'
 
+" Better c++ syntax
+Plug 'octol/vim-cpp-enhanced-highlight'
+
+" Format c/c++ code easier
+Plug 'rhysd/vim-clang-format'
+
 " Telescope!!
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -44,4 +50,6 @@ Plug 'szw/vim-maximizer'
 
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-commentary'
+Plug 'alvan/vim-closetag'
 call plug#end()
+
