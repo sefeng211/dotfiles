@@ -1,4 +1,5 @@
 call plug#begin("~/.nvim/plugged")
+Plug 'vimwiki/vimwiki'
 " FZF support
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
