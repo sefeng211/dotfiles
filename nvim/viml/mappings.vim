@@ -63,3 +63,13 @@ nnoremap <silent> <Leader>pr :PrettierAsync<cr>
 nnoremap <silent><C-w>z :MaximizerToggle<CR>
 vnoremap <silent><C-w>z :MaximizerToggle<CR>gv
 inoremap <silent><C-w>z <C-o>:MaximizerToggle<CR>
+
+" Sizing window horizontally
+nnoremap <A-,> <C-W>5>
+nnoremap <A-.> <C-W>5<
+
+" Sizing window vertically taller
+nnoremap <A-t> <C-W>+ " shorter
+nnoremap <A-s> <C-W>- 
+
+tnoremap <leader><leader> <C-\><C-n>
