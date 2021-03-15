@@ -1,4 +1,8 @@
 call plug#begin("~/.nvim/plugged")
+Plug 'kevinhwang91/nvim-bqf'
+
+Plug 'lilydjwg/fcitx.vim', { 'branch': 'fcitx5' }
+
 Plug 'vimwiki/vimwiki'
 " FZF support
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }

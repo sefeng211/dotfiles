@@ -41,9 +41,9 @@ nnoremap <C-]> :YcmCompleter GoToImprecise<CR>
 nnoremap <Leader>cr :YcmCompleter RefactorRename<space>
 
 " AsyncTask
-nnoremap <Leader>pac :AsyncTask project-build<CR>
-nnoremap <Leader>par :AsyncTask project-run<CR>
-nnoremap <Leader>pat :AsyncTask project-test<CR>
+nnoremap <Leader>pc :AsyncTask project-build<CR>
+nnoremap <Leader>pr :AsyncTask project-run<CR>
+nnoremap <Leader>pt :AsyncTask project-test<CR>
 
 " deoplete
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
@@ -72,4 +72,13 @@ nnoremap <A-.> <C-W>5<
 nnoremap <A-t> <C-W>+ " shorter
 nnoremap <A-s> <C-W>- 
 
+" Switch from terminal mode to normal mode
 tnoremap <leader><leader> <C-\><C-n>
+
+" Quickfix
+noremap <leader>cn :cnext<CR>
+noremap <leader>cl :clast<CR>
+noremap <leader>co :copen<CR>
+noremap <leader>cs :cfirst<CR> :cnext<CR>
+noremap <leader>cp :cprevious<CR>
+noremap <leader>cc :cclose<CR>

@@ -67,7 +67,7 @@ let g:ycm_language_server =
             \ ]
 
 " == asynctask ==
-let g:asynctasks_term_pos = "tab"
+let g:asynctasks_term_pos = "bottom"
 let g:asynctasks_term_reuse = 1
 let g:asynctasks_template = {}
 let g:asynctasks_template.cargo = [
