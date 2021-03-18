@@ -116,3 +116,15 @@ if has('nvim')
     let fc['https?://app\.slack\.com/*'] = { 'takeover': 'never', 'priority': 1 }
     let fc['https?://app\.element\.io/*'] = { 'takeover': 'never', 'priority': 1 }
 endif
+
+" = Hacks =
+" Function that remove trailing spaces and also keep the cursor position
+" Reference: https://stackoverflow.com/questions/356126/how-can-you-automatically-remove-trailing-whitespace-in-vim
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+" Apply the above function to all files during file saving
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
