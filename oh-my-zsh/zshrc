@@ -137,7 +137,7 @@ alias vim='nvim'
 alias vimdiff="nvim -d"
 alias t="task"
 
-alias cat='bat'
+# alias cat='bat'
 alias opsignin='eval $(op signin sefeng)'
 
 #Taskoo

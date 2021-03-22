@@ -1,5 +1,11 @@
 call plug#begin("~/.nvim/plugged")
-Plug 'kevinhwang91/nvim-bqf'
+
+" Quickfix
+Plug 'kevinhwang91/nvim-bqf' " Provides preview and some handy mappings
+Plug 'romainl/vim-qf' " Provides functions to toggle quickfix etc
+
+Plug 'junegunn/goyo.vim'
+Plug 'preservim/tagbar'
 
 Plug 'lilydjwg/fcitx.vim', { 'branch': 'fcitx5' }
 
@@ -7,7 +13,7 @@ Plug 'vimwiki/vimwiki'
 " FZF support
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-
+"
 Plug 'arcticicestudio/nord-vim'
 Plug 'christoomey/vim-tmux-navigator'
 
@@ -56,5 +62,6 @@ Plug 'szw/vim-maximizer'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-commentary'
 Plug 'alvan/vim-closetag'
+
 call plug#end()
 

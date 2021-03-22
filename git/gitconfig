@@ -10,7 +10,8 @@
 	pager = delta
 [delta]
 	syntax-theme = Nord
-    features = side-by-side line-numbers
+    # features = side-by-side line-numbers
+    features = line-numbers
 [http]
 	version = HTTP/1.1
 [interactive]

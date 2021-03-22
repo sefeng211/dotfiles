@@ -13,6 +13,8 @@ call plug#begin()
 if has('nvim')
   Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 endif
+
+Plug 'romainl/vim-qf'
 "  == Language Support ==
 Plug 'ycm-core/YouCompleteMe'
 " Syntax support for OpenGL scripting language
@@ -207,7 +209,7 @@ map <C-]> :YcmCompleter GoToImprecise<CR>
 nnoremap <Leader>cr :YcmCompleter RefactorRename<space>
 
 " == asyncrun ==
-let g:asyncrun_open = 8
+let g:asyncrun_open = 24
 
 " == vim-markdown ==
 " Disable vim markdown folding
@@ -554,4 +556,13 @@ endfunction
 " }}}
 
 hi Terminal guibg=#2E3440
+
+
+nmap [l <Plug>qf_loc_previous
+nmap ]l <Plug>qf_loc_next
+nmap ,cp <Plug>QfCprevious
+nmap ,cn <Plug>QfCnext
+
+nmap ,jp <Plug>(qf_qf_switch)
+nmap ,cc <Plug>(qf_qf_toggle)
 

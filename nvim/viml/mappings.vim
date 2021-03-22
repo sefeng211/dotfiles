@@ -5,12 +5,12 @@ imap jj <Esc>
 " Speical case to use either telescope or fzf depends on the current working
 " directory
 nnoremap <leader>ff :lua require('functions').fuzzy_find_file()<CR>
-" FZF 
+" FZF
 nnoremap <leader>fr :History <CR>
 nnoremap <leader>fc :History: <CR>
 nnoremap <leader>r :Rg <CR>
 nmap // :BLines<CR>
-nmap cc :Commands<CR>
+" nmap cc :Commands<CR>
 
 " Telescope
 nnoremap <leader>bb :Buffers<cr>
@@ -70,15 +70,40 @@ nnoremap <A-.> <C-W>5<
 
 " Sizing window vertically taller
 nnoremap <A-t> <C-W>+ " shorter
-nnoremap <A-s> <C-W>- 
+nnoremap <A-s> <C-W>-
 
 " Switch from terminal mode to normal mode
 tnoremap <leader><leader> <C-\><C-n>
 
 " Quickfix
-noremap <leader>cn :cnext<CR>
-noremap <leader>cl :clast<CR>
-noremap <leader>co :copen<CR>
-noremap <leader>cs :cfirst<CR> :cnext<CR>
-noremap <leader>cp :cprevious<CR>
-noremap <leader>cc :cclose<CR>
+" noremap <leader>cn :cnext<CR>
+" noremap <leader>cl :clast<CR>
+" noremap <leader>co :copen<CR>
+" noremap <leader>cs :cfirst<CR> :cnext<CR>
+" noremap <leader>cp :cprevious<CR>
+" noremap <leader>cc :cclose<CR>
+
+noremap <leader>cp <Plug>(qf_qf_previous)
+noremap <leader>cn <Plug>(qf_qf_next)
+noremap <leader>co <Plug>(qf_qf_toggle)
+
+
+nmap [l <Plug>qf_loc_previous
+nmap ]l <Plug>qf_loc_next
+nmap [q <Plug>qf_qf_previous
+nmap ]q <Plug>qf_qf_next
+
+let g:qf_mapping_ack_style = 1
+" Goyo
+noremap <leader>gg :Goyo<CR>
+
+" Tagbar
+noremap <leader>tg :TagbarToggle<CR>
+
+" Vim-qf
+nmap [q <Plug>QfCprevious
+nmap ]q <Plug>QfCnext
+
+nmap <leader>co <Plug>(qf_qf_switch)
+nmap <leader>cc <Plug>(qf_qf_toggle)
+

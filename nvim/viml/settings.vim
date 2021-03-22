@@ -21,7 +21,7 @@ set shiftwidth=4
 set expandtab
 " }}}
 
-" {{{ Colorscheme 
+" {{{ Colorscheme
 if (has("termguicolors"))
   set termguicolors
 endif
@@ -86,6 +86,8 @@ let g:asynctasks_template.cargo = [
 			\ "output=terminal",
 			\ ]
 
+let g:asyncrun_open = 15
+
 " == vimwiki ==
 let g:vimwiki_list = [{'path': '~/.local/Dropbox/wiki/mozilla/'},
             \ {'path': '~/.local/Dropbox/wiki/personal/'}]
@@ -117,14 +119,14 @@ if has('nvim')
     let fc['https?://app\.element\.io/*'] = { 'takeover': 'never', 'priority': 1 }
 endif
 
-" = Hacks =
-" Function that remove trailing spaces and also keep the cursor position
-" Reference: https://stackoverflow.com/questions/356126/how-can-you-automatically-remove-trailing-whitespace-in-vim
-fun! <SID>StripTrailingWhitespaces()
-    let l = line(".")
-    let c = col(".")
-    %s/\s\+$//e
-    call cursor(l, c)
-endfun
-" Apply the above function to all files during file saving
-autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+
+let g:tagbar_type_vimwiki = {
+          \   'ctagstype':'vimwiki'
+          \ , 'kinds':['h:header']
+          \ , 'sro':'&&&'
+          \ , 'kind2scope':{'h':'header'}
+          \ , 'sort':0
+          \ , 'ctagsbin':'~/.local/bin/vwtags'
+          \ , 'ctagsargs': 'default'
+          \ }
+let g:tagbar_position = 'left'
