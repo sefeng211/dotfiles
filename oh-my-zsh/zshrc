@@ -142,6 +142,13 @@ alias opsignin='eval $(op signin sefeng)'
 
 #Taskoo
 alias in='tt add'
+alias tm='tt modify'
+alias tr='tt remove'
+alias td='tt delete'
+alias tl='tt list'
+alias ts='tt start'
+alias ti='tt info'
+
 alias gtd='tt list c:Gtd'
 alias inbox='tt list c:Inbox'
 alias tick='tt list c:tick'
