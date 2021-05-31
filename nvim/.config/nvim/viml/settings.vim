@@ -130,3 +130,10 @@ let g:tagbar_type_vimwiki = {
           \ , 'ctagsargs': 'default'
           \ }
 let g:tagbar_position = 'left'
+hi VimwikiHeader1 guifg=#8FBCBB
+hi VimwikiHeader2 guifg=#88C0D0
+hi VimwikiHeader3 guifg=#81A1C1
+hi VimwikiHeader4 guifg=#5E81AC
+hi VimwikiHeader5 guifg=#B48EAD
+hi VimwikiHeader6 guifg=#A3BE8C
+
