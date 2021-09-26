@@ -153,10 +153,17 @@ alias gtd='tt list c:Gtd'
 alias inbox='tt list c:Inbox'
 alias tick='tt list c:tick'
 alias smd='tt list c:smd'
-alias today='tt view all today'
+alias today='tt agenda today'
 alias week='tt view all 1weeks'
 alias anno='tt annotate'
 alias review='tt review'
+alias lg='lazygit'
+
+# Git
+alias gca='git commit -a'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gs='git status -uno'
 
 # Will cd into the top of the current repository
 # or submodule.

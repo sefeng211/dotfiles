@@ -63,5 +63,9 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-commentary'
 Plug 'alvan/vim-closetag'
 
+Plug 'ianding1/leetcode.vim'
+
+Plug 'pangloss/vim-javascript'
+
 call plug#end()
 

@@ -483,13 +483,7 @@ bindsym $mod+Ctrl+less move workspace to output left
 bindsym $mod+Ctrl+j move workspace to output down
 bindsym $mod+Ctrl+k move workspace to output up
 
-# keybind for ranger
-bindsym Mod4+u exec alacritty -t nnn -e zsh -c "source ~/.zshrc && nnn -e -a"
-
-# keybind for vit
-bindsym Mod4+i exec "i3-msg 'layout splitv; exec alacritty --config-file ~/.config/alacritty/alacritty.yml --class TaskWikiTerm -e zsh -c vimw '"
-bindsym Mod4+p exec "i3-msg 'layout splitv; exec alacritty --config-file ~/.config/alacritty/alacritty.yml --class TaskWikiTerm -e zsh -c vimp '"
-
+bindsym Mod4+p exec toggle_pomo
 
 # Start compton compositor
 exec --no-startup-id picom --backend xrender --config ~/.config/compton/compton.conf

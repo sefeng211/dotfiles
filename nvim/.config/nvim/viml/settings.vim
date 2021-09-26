@@ -137,3 +137,5 @@ hi VimwikiHeader4 guifg=#5E81AC
 hi VimwikiHeader5 guifg=#B48EAD
 hi VimwikiHeader6 guifg=#A3BE8C
 
+let g:leetcode_browser = 'firefox'
+let g:leetcode_solution_filetype = 'python'

@@ -1,7 +1,3 @@
-[TASK]
-command=tt view all today | sed 's/\x1B[@A-Z\\\]^_]\|\x1B\[[0-9:;<=>?]*[-!"#$%&'"'"'()*+,.\/]*[][\\@A-Z^_`a-z{|}~]//g' | grep "(.\+)$" | sed "s/.*(//;s/)//" | awk '{s+=$1} END {print "📝" s}'
-interval=60
-
 [MAIL]
 command=mailbox
 interval=5
