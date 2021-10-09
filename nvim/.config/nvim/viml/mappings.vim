@@ -19,8 +19,12 @@ nnoremap <leader>bb :Buffers<cr>
 nnoremap <leader>ttw :lua require('plugins.telescope.custom').taskoo_list_gtd_work()<cr>
 
 " Use system clipboard
-nnoremap <Leader>y "+y
-nnoremap <Leader>p "+p
+nnoremap <leader>y "+y
+nnoremap <leader>p "+p
+inoremap <leader>y "+y
+inoremap <leader>p "+p
+vnoremap <leader>y "+y
+vnoremap <leader>p "+p
 
 " Spell Check Key bindings
 nnoremap <leader>sc :setlocal spell! spelllang=en_us<CR>
