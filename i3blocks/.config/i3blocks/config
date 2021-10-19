@@ -1,7 +1,3 @@
-[MAIL]
-command=mailbox
-interval=5
-
 [CRYPTO_BTC]
 command=crypto_luke
 interval=5

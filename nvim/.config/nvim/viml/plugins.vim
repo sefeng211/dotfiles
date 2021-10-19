@@ -1,4 +1,6 @@
 call plug#begin("~/.nvim/plugged")
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Quickfix
 Plug 'kevinhwang91/nvim-bqf' " Provides preview and some handy mappings
@@ -18,7 +20,6 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'christoomey/vim-tmux-navigator'
 
 " Use for status bar
-Plug 'nvim-lua/plenary.nvim'
 Plug 'tjdevries/express_line.nvim'
 
 " Better c++ syntax
@@ -66,6 +67,10 @@ Plug 'alvan/vim-closetag'
 Plug 'ianding1/leetcode.vim'
 
 Plug 'pangloss/vim-javascript'
+
+
+Plug 'vhyrro/neorg-telescope'
+Plug 'nvim-neorg/neorg'
 
 call plug#end()
 
