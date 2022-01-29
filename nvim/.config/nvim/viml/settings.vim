@@ -27,8 +27,14 @@ if (has("termguicolors"))
 endif
 
 syntax enable
-colorscheme nord
+" {{ Removed at Jan 7th, 2022
+" colorscheme nord
+" }}
+
+set background=light
+colorscheme tokyonight
 " Required to make the background transparent
+" This makes Vim to use the same background as the terminal
 hi Normal guibg=NONE ctermbg=NONE
 " }}}
 

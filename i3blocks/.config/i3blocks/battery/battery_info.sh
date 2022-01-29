@@ -21,7 +21,7 @@ then
 
     # Print full text. The charging data.
     TIME_LEFT=$(echo $TIME_LEFT | awk '{ printf("%s\n", substr($1, 0, 5)) }')
-    echo "🔋$BAT_LEVEL 👾$TIME_LEFT "
+    echo "🔋$BAT_LEVEL 🐳$TIME_LEFT "
 
     # Print the short text.
     echo "BAT: $BAT_LEVEL"

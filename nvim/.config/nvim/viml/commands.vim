@@ -2,8 +2,8 @@
 command! Reload execute "source ~/.config/nvim/init.vim"
 
 " AUTOCMD
-autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
-autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+" autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+" autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
 
 autocmd FileType rust nnoremap <buffer><Leader>cf :<C-u>RustFmt<CR>
 autocmd FileType rust vnoremap <buffer><Leader>cf :RustFmt<CR>
@@ -21,5 +21,5 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 autocmd FileType TelescopePrompt call deoplete#custom#buffer_option('auto_complete', v:false)
 autocmd FileType c,cpp,rust,hpp,h,python call deoplete#custom#buffer_option('auto_complete', v:false)
-autocmd FileType javascript,html setlocal shiftwidth=2 tabstop=2
+autocmd FileType javascript,html setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 au BufReadPost,BufNewFile *.wiki TagbarOpen

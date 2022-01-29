@@ -26,7 +26,7 @@ Plug 'tjdevries/express_line.nvim'
 Plug 'octol/vim-cpp-enhanced-highlight'
 
 " Format c/c++ code easier
-Plug 'rhysd/vim-clang-format'
+" Plug 'rhysd/vim-clang-format'
 
 " Telescope!!
 Plug 'nvim-lua/popup.nvim'
@@ -44,7 +44,7 @@ Plug 'szw/vim-maximizer'
 Plug 'mcchrish/nnn.vim'
 
 " YCM is still soooo goood
-Plug 'ycm-core/YouCompleteMe'
+" Plug 'ycm-core/YouCompleteMe'
 
 Plug 'kyazdani42/nvim-web-devicons'
 
@@ -68,9 +68,15 @@ Plug 'ianding1/leetcode.vim'
 
 Plug 'pangloss/vim-javascript'
 
-
 Plug 'vhyrro/neorg-telescope'
 Plug 'nvim-neorg/neorg'
 
-call plug#end()
+" LSP Related
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'L3MON4D3/LuaSnip'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
+call plug#end()

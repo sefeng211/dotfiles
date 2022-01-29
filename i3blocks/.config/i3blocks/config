@@ -1,6 +1,7 @@
-[CRYPTO_BTC]
-command=crypto_luke
-interval=5
+[Task]
+command=tt agenda today | awk 'NF>0' | wc -l
+interval=2
+color=#C9E3DB
 
 [DISK]
 command=df -h / | awk '/\//{ printf(" 💾%4s \n", $4 ) }'

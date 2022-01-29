@@ -234,6 +234,8 @@ for_window [title="^reftest"] floating enable
 for_window [instance="VitTerm"] floating enable, resize set 1900 500px, move position center
 for_window [instance="TaskWikiTerm"] floating enable
 for_window [title="nnn"] floating enable
+for_window [instance="Mozapp"] floating enable
+for_window [instance="Firefox"] floating enable
 
 
 # Make the $ws5 to be stacked by default
