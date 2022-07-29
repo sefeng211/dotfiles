@@ -1,4 +1,6 @@
 call plug#begin("~/.nvim/plugged")
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Quickfix
 Plug 'kevinhwang91/nvim-bqf' " Provides preview and some handy mappings
@@ -18,14 +20,13 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'christoomey/vim-tmux-navigator'
 
 " Use for status bar
-Plug 'nvim-lua/plenary.nvim'
 Plug 'tjdevries/express_line.nvim'
 
 " Better c++ syntax
 Plug 'octol/vim-cpp-enhanced-highlight'
 
 " Format c/c++ code easier
-Plug 'rhysd/vim-clang-format'
+" Plug 'rhysd/vim-clang-format'
 
 " Telescope!!
 Plug 'nvim-lua/popup.nvim'
@@ -43,7 +44,7 @@ Plug 'szw/vim-maximizer'
 Plug 'mcchrish/nnn.vim'
 
 " YCM is still soooo goood
-Plug 'ycm-core/YouCompleteMe'
+" Plug 'ycm-core/YouCompleteMe'
 
 Plug 'kyazdani42/nvim-web-devicons'
 
@@ -67,5 +68,15 @@ Plug 'ianding1/leetcode.vim'
 
 Plug 'pangloss/vim-javascript'
 
-call plug#end()
+Plug 'vhyrro/neorg-telescope'
+Plug 'nvim-neorg/neorg'
 
+" LSP Related
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'L3MON4D3/LuaSnip'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+
+call plug#end()

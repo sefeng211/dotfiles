@@ -33,14 +33,14 @@ local mode_dispatch = setmetatable({}, {
   end
 })
 
--- Display the short name of modes 
+-- Display the short name of modes
 local gen_mode = function(window, buffer)
     local format_string = '[%s]'
     local mode = vim.api.nvim_get_mode().mode
     return mode_dispatch[format_string][mode](window, buffer)
 end
 
-require('el').setup {	
+require('el').setup {
   generator = function(_, _)
     return {
       gen_mode,

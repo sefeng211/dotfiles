@@ -120,12 +120,12 @@ bindsym Mod4+v split v;exec notify-send 'tile vertically'
 bindsym $mod+q split toggle
 
 # toggle fullscreen mode for the focused container
-bindsym $mod+u fullscreen toggle
+bindsym Mod4+u fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym Mod4+s layout stacking
+bindsym Mod4+w layout tabbed
+bindsym Mod4+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -234,6 +234,8 @@ for_window [title="^reftest"] floating enable
 for_window [instance="VitTerm"] floating enable, resize set 1900 500px, move position center
 for_window [instance="TaskWikiTerm"] floating enable
 for_window [title="nnn"] floating enable
+for_window [instance="Mozapp"] floating enable
+for_window [instance="Mozapp"] floating enable
 
 
 # Make the $ws5 to be stacked by default
@@ -492,7 +494,7 @@ exec --no-startup-id picom --backend xrender --config ~/.config/compton/compton.
 exec --no-startup-id fcitx5 -d
 
 # Set the wallpaper
-exec --no-startup-id feh --bg-fill ~/.local/wallpaper/slowpoke.jpg
+exec --no-startup-id feh --bg-fill ~/.local/pics/wallpaper/slow_poke.jpg
 
 # Map the capslock key to control
 exec --no-startup-id setxkbmap -option caps:ctrl_modifier

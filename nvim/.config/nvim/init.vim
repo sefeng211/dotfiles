@@ -3,5 +3,6 @@ source ~/.config/nvim/viml/plugins.vim
 source ~/.config/nvim/viml/settings.vim
 source ~/.config/nvim/viml/commands.vim
 
-lua require('config')
-
+lua << EOF
+require('config')
+EOF
