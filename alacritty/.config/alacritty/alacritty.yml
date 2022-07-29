@@ -2,7 +2,7 @@ window:
   padding:
     x: 6
     y: 6
-background_opacity: 0.95
+  opacity: 0.95
 
   # TokyoNight Alacritty Colors
 colors:

@@ -71,3 +71,17 @@ sessionHistoryInParent
 bfcached
 SpeedIndex
 postTask
+iframe
+mFramesWithPendingRenderingText
+LCP
+PreloaderBase
+imgRequestProxy
+SupportWeakPtr
+IProgressObserver
+LoadTime
+RenderTime
+FCP
+FirstContentfulPaint
+LargestContentfulPaint
+NotifyContentfulPaint
+credentialless
