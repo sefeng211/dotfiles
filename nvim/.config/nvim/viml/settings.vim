@@ -32,7 +32,7 @@ syntax enable
 " }}
 
 set background=light
-colorscheme tokyonight
+colorscheme iceberg
 " Required to make the background transparent
 " This makes Vim to use the same background as the terminal
 hi Normal guibg=NONE ctermbg=NONE
