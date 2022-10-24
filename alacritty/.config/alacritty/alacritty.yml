@@ -5,37 +5,64 @@ window:
   opacity: 0.95
 
   # TokyoNight Alacritty Colors
+  # colors:
+  #   # Default colors
+  #   primary:
+  #     background: '0xe1e2e7'
+  #     foreground: '0x3760bf'
+  #
+  #   # Normal colors
+  #   normal:
+  #     black:   '0xe9e9ed'
+  #     red:     '0xf52a65'
+  #     green:   '0x587539'
+  #     yellow:  '0x8c6c3e'
+  #     blue:    '0x2e7de9'
+  #     magenta: '0x9854f1'
+  #     cyan:    '0x007197'
+  #     white:   '0x6172b0'
+  #
+  #   # Bright colors
+  #   bright:
+  #     black:   '0xa1a6c5'
+  #     red:     '0xf52a65'
+  #     green:   '0x587539'
+  #     yellow:  '0x8c6c3e'
+  #     blue:    '0x2e7de9'
+  #     magenta: '0x9854f1'
+  #     cyan:    '0x007197'
+  #     white:   '0x3760bf'
+  #
+  #   indexed_colors:
+  #     - { index: 16, color: '0xb15c00' }
+  #     - { index: 17, color: '0xc64343' }
 colors:
   # Default colors
   primary:
-    background: '0xe1e2e7'
-    foreground: '0x3760bf'
+    background: '#F9FAFB'
+    foreground: '#2E3440'
 
   # Normal colors
   normal:
-    black:   '0xe9e9ed'
-    red:     '0xf52a65'
-    green:   '0x587539'
-    yellow:  '0x8c6c3e'
-    blue:    '0x2e7de9'
-    magenta: '0x9854f1'
-    cyan:    '0x007197'
-    white:   '0x6172b0'
+    black:   '#3B4252'
+    red:     '#BF616A'
+    green:   '#A3BE8C'
+    yellow:  '#EBCB8B'
+    blue:    '#5E81AC'
+    magenta: '#B48EAD'
+    cyan:    '#88C0D0'
+    white:   '#D8DEE9'
 
   # Bright colors
   bright:
-    black:   '0xa1a6c5'
-    red:     '0xf52a65'
-    green:   '0x587539'
-    yellow:  '0x8c6c3e'
-    blue:    '0x2e7de9'
-    magenta: '0x9854f1'
-    cyan:    '0x007197'
-    white:   '0x3760bf'
-
-  indexed_colors:
-    - { index: 16, color: '0xb15c00' }
-    - { index: 17, color: '0xc64343' }
+    black:   '#5C566A'
+    red:     '#BF616A'
+    green:   '#A3BE8C'
+    yellow:  '#EBCB8B'
+    blue:    '#81A1C1'
+    magenta: '#B48EAD'
+    cyan:    '#8FBCBB'
+    white:   '#E5E9F0'
 # Nord Again (Removed at Jan 7, 2021)
 # colors:
 #   primary:

@@ -9,7 +9,7 @@ Plug 'romainl/vim-qf' " Provides functions to toggle quickfix etc
 Plug 'junegunn/goyo.vim'
 Plug 'preservim/tagbar'
 
-Plug 'lilydjwg/fcitx.vim', { 'branch': 'fcitx5' }
+" Plug 'lilydjwg/fcitx.vim', { 'branch': 'fcitx5' }
 
 Plug 'vimwiki/vimwiki'
 " FZF support
