@@ -95,8 +95,8 @@ let g:asynctasks_template.cargo = [
 let g:asyncrun_open = 15
 
 " == vimwiki ==
-let g:vimwiki_list = [{'path': '~/.local/Dropbox/wiki/mozilla/'},
-            \ {'path': '~/.local/Dropbox/wiki/personal/'}]
+let g:vimwiki_list = [{'path': '~/.local/data/vimwiki/mozilla/'},
+            \ {'path': '~/.local/data/vimwiki/personal/'}]
 
 let wiki = {}
 let wiki.nested_syntaxes = {'python': 'python', 'c++': 'cpp'}
