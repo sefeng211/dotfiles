@@ -29,8 +29,8 @@ font xft:URWGothic-Book 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
-bindsym $mod+Shift+Return exec alacritty -e tmux
+bindsym $mod+Return exec kitty
+bindsym $mod+Shift+Return exec kitty -e tmux
 
 # kill focused window
 bindsym $mod+Ctrl+q kill
@@ -365,19 +365,33 @@ bar {
 	strip_workspace_numbers no
 	workspace_min_width 40
 
-    colors {
-#        background #222D31
-	background $term_background
-        statusline #F9FAF9
-        #statusline #aacc60
-        separator  #629692
+    # colors {
+#   #      background #222D31
+	# background $term_background
+    #     statusline #F9FAF9
+    #     #statusline #aacc60
+    #     separator  #629692
 
-#                      border  backgr. text
-        focused_workspace  #F9FAF9 #16a085 #292F34
-        active_workspace   #595B5B #353836 #FDF6E3
-        inactive_workspace #595B5B #222D31 #EEE8D5
-        binding_mode       #16a085 #2C2C2C #F9FAF9
-        urgent_workspace   #16a085 #FDF6E3 #E5201D
+#   #                    border  backgr. text
+    #     focused_workspace  #F9FAF9 #16a085 #292F34
+    #     active_workspace   #595B5B #353836 #FDF6E3
+    #     inactive_workspace #595B5B #222D31 #EEE8D5
+    #     binding_mode       #16a085 #2C2C2C #F9FAF9
+    #     urgent_workspace   #16a085 #FDF6E3 #E5201D
+    # }
+
+
+    colors {
+            separator  #1f222d
+            background #1f222d
+            statusline #81a1c1
+
+            #                   border  background text
+            focused_workspace  #1f222d #1f222d    #81a1c1
+            active_workspace   #1f222d #252936    #5e81ac
+            inactive_workspace #1f222d #1f222d    #4c566a
+            urgent_workspace   #1f222d #1f222d    #ee829f
+            binding_mode       #1f222d #81a1c1    #2e3440
     }
 }
 
@@ -387,13 +401,22 @@ bindsym $mod+m bar mode toggle
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
   #client.focused          #556064 #556064 #80FFF9 #FDF6E3
-  client.focused          #ff9900 #ff9900 #333300 #ff9900
-  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
-  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
-  client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
-  client.placeholder      #000000 #0c0c0c #ffffff #000000
+  # client.focused          #ff9900 #ff9900 #333300 #ff9900
+  # client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
+  # client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
+  # client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
+  # client.placeholder      #000000 #0c0c0c #ffffff #000000
 
-  client.background       #2B2C2B
+  # client.background       #2B2C2B
+    # class                 border  backgr. text    indicator
+  client.focused          #ff9900 #ff9900 #333300 #ff9900
+  # client.focused          #81a1c1 #81a1c1 #ffffff #FDF6E3
+  client.unfocused        #2e3440 #1f222d #888888 #1f222d
+  client.focused_inactive #2e3440 #1f222d #888888 #1f222d
+  client.placeholder      #2e3440 #1f222d #888888 #1f222d
+  client.urgent           #900000 #900000 #ffffff #900000
+
+  client.background       #242424
 
 #############################
 ### settings for i3-gaps: ###

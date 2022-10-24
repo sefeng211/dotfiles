@@ -125,17 +125,17 @@ if has('nvim')
     let fc['https?://app\.element\.io/*'] = { 'takeover': 'never', 'priority': 1 }
 endif
 
-
-let g:tagbar_type_vimwiki = {
-          \   'ctagstype':'vimwiki'
-          \ , 'kinds':['h:header']
-          \ , 'sro':'&&&'
-          \ , 'kind2scope':{'h':'header'}
-          \ , 'sort':0
-          \ , 'ctagsbin':'~/.local/bin/vwtags'
-          \ , 'ctagsargs': 'default'
-          \ }
+" let g:tagbar_type_vimwiki = {
+"           \   'ctagstype':'vimwiki'
+"           \ , 'kinds':['h:header']
+"           \ , 'sro':'&&&'
+"           \ , 'kind2scope':{'h':'header'}
+"           \ , 'sort':0
+"           \ , 'ctagsbin':'~/.local/bin/vwtags'
+"           \ , 'ctagsargs': 'default'
+"           \ }
 let g:tagbar_position = 'left'
+
 hi VimwikiHeader1 guifg=#8FBCBB
 hi VimwikiHeader2 guifg=#88C0D0
 hi VimwikiHeader3 guifg=#81A1C1
