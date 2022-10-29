@@ -1,0 +1,59 @@
+# Window Manager Navigation
+alt + shift + equal
+	sxiv -rt "$HOME/image"
+
+alt + {h,j,k,l}
+    i3-msg focus {left,down,up,right}
+
+alt + ctrl + q
+    i3-msg kill
+
+alt + ctrl + {1,2,3,4}
+    i3-msg workspace {"1:","2:","3:","4:"}
+
+alt + ctrl + r
+    i3-msg workspace back_and_forth
+
+alt + ctrl + {h,l}
+    i3-msg workspace {prev,next}
+
+alt + shift + {1,2,3,4}
+    i3-msg move container to workspace {"1:","2:","3:","4:"}
+
+alt + shift + {h,j,k,l}
+    i3-msg move {left,down,up,right}
+
+## toggle tiling / floating
+alt + shift + space
+    i3-msg floating toggle
+
+## change focus between tiling / floating windows
+alt + space
+    i3-msg focus mode_toggle
+
+alt + u
+    i3-msg fullscreen toggle
+
+alt + {s,t}
+    i3-msg layout {stacking,tabbed}
+
+alt + shift + r
+    i3-msg restart
+
+# ROFI
+alt + n
+    rofi -show window
+
+shift + ctrl + space
+    rofi -show run
+
+alt + shift + v
+    rofi -show emoji
+
+# Misc
+alt + Return
+    kitty
+
+alt + o ; {f,t}
+	{firefox,thunderbird}
+
