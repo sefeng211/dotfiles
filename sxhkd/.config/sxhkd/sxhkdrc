@@ -17,7 +17,7 @@ alt + ctrl + r
 alt + ctrl + {h,l}
     i3-msg workspace {prev,next}
 
-alt + shift + {1,2,3,4}
+alt + shift + {1-4}
     i3-msg move container to workspace {"1:","2:","3:","4:"}
 
 alt + shift + {h,j,k,l}
@@ -51,9 +51,12 @@ alt + shift + v
     rofi -show emoji
 
 # Misc
-alt + Return
+@alt + Return
     kitty
 
 alt + o ; {f,t}
-	{firefox,thunderbird}
+	{firefox-nightly,thunderbird}
+
+alt + r ; s
+    kill sxhkd && sxhkd &
 

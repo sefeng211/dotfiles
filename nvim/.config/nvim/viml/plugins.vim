@@ -83,4 +83,7 @@ Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'casonadams/nord.vim'
 Plug 'cocopon/iceberg.vim'
 
+" Color syntax for sxhkdrc
+Plug 'baskerville/vim-sxhkdrc'
+
 call plug#end()
