@@ -52,11 +52,10 @@ alt + shift + v
 
 # Misc
 @alt + Return
-    kitty
+    alacritty
 
 alt + o ; {f,t}
 	{firefox-nightly,thunderbird}
 
 alt + r ; s
     kill sxhkd && sxhkd &
-
