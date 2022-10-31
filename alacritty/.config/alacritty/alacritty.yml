@@ -4,209 +4,34 @@ window:
     y: 6
   opacity: 0.95
 
-  # TokyoNight Alacritty Colors
-  # colors:
-  #   # Default colors
-  #   primary:
-  #     background: '0xe1e2e7'
-  #     foreground: '0x3760bf'
-  #
-  #   # Normal colors
-  #   normal:
-  #     black:   '0xe9e9ed'
-  #     red:     '0xf52a65'
-  #     green:   '0x587539'
-  #     yellow:  '0x8c6c3e'
-  #     blue:    '0x2e7de9'
-  #     magenta: '0x9854f1'
-  #     cyan:    '0x007197'
-  #     white:   '0x6172b0'
-  #
-  #   # Bright colors
-  #   bright:
-  #     black:   '0xa1a6c5'
-  #     red:     '0xf52a65'
-  #     green:   '0x587539'
-  #     yellow:  '0x8c6c3e'
-  #     blue:    '0x2e7de9'
-  #     magenta: '0x9854f1'
-  #     cyan:    '0x007197'
-  #     white:   '0x3760bf'
-  #
-  #   indexed_colors:
-  #     - { index: 16, color: '0xb15c00' }
-  #     - { index: 17, color: '0xc64343' }
 colors:
   # Default colors
   primary:
-    background: '#F9FAFB'
-    foreground: '#2E3440'
+    background: '#e8e9ec'
+    foreground: '#33374c'
 
   # Normal colors
   normal:
-    black:   '#3B4252'
-    red:     '#BF616A'
-    green:   '#A3BE8C'
-    yellow:  '#EBCB8B'
-    blue:    '#5E81AC'
-    magenta: '#B48EAD'
-    cyan:    '#88C0D0'
-    white:   '#D8DEE9'
+    black:   '#33374c'
+    red:     '#cc517a'
+    green:   '#668e3d'
+    yellow:  '#c57339'
+    blue:    '#2d539e'
+    magenta: '#7759b4'
+    cyan:    '#3f83a6'
+    white:   '#dcdfe7'
 
   # Bright colors
   bright:
-    black:   '#5C566A'
-    red:     '#BF616A'
-    green:   '#A3BE8C'
-    yellow:  '#EBCB8B'
-    blue:    '#81A1C1'
-    magenta: '#B48EAD'
-    cyan:    '#8FBCBB'
-    white:   '#E5E9F0'
-# Nord Again (Removed at Jan 7, 2021)
-# colors:
-#   primary:
-#     background: '#2e3440'
-#     foreground: '#d8dee9'
-#     dim_foreground: '#a5abb6'
-#   cursor:
-#     text: '#2e3440'
-#     cursor: '#d8dee9'
-#   vi_mode_cursor:
-#     text: '#2e3440'
-#     cursor: '#d8dee9'
-#   selection:
-#     text: CellForeground
-#     background: '#4c566a'
-#   search:
-#     matches:
-#       foreground: CellBackground
-#       background: '#88c0d0'
-#     bar:
-#       background: '#434c5e'
-#       foreground: '#d8dee9'
-#   normal:
-#     black: '#3b4252'
-#     red: '#bf616a'
-#     green: '#a3be8c'
-#     yellow: '#ebcb8b'
-#     blue: '#81a1c1'
-#     magenta: '#b48ead'
-#     cyan: '#88c0d0'
-#     white: '#e5e9f0'
-#   bright:
-#     black: '#4c566a'
-#     red: '#bf616a'
-#     green: '#a3be8c'
-#     yellow: '#ebcb8b'
-#     blue: '#81a1c1'
-#     magenta: '#b48ead'
-#     cyan: '#8fbcbb'
-#     white: '#eceff4'
-#   dim:
-#     black: '#373e4d'
-#     red: '#94545d'
-#     green: '#809575'
-#     yellow: '#b29e75'
-#     blue: '#68809a'
-#     magenta: '#8c738c'
-#     cyan: '#6d96a5'
-#     white: '#aeb3bb'
+    black:   '#262a3f'
+    red:     '#cc3768'
+    green:   '#598030'
+    yellow:  '#b6662d'
+    blue:    '#22478e'
+    magenta: '#6845ad'
+    cyan:    '#327698'
+    white:   '#8389a3'
 
-# Colors (Nord) {{{
-# colors:
-#    # Default colors
-#    primary:
-#      background: '#2E3440'
-#      foreground: '#D8DEE9'
-#
-#    # Normal colors
-#    normal:
-#      black:   '#3B4252'
-#      red:     '#BF616A'
-#      green:   '#A3BE8C'
-#      yellow:  '#EBCB8B'
-#      blue:    '#81A1C1'
-#      magenta: '#B48EAD'
-#      cyan:    '#88C0D0'
-#      white:   '#E5E9F0'
-#
-#    # Bright colors
-#    bright:
-#      black:   '#4C566A'
-#      red:     '#BF616A'
-#      green:   '#A3BE8C'
-#      yellow:  '#EBCB8B'
-#      blue:    '#81A1C1'
-#      magenta: '#B48EAD'
-#      cyan:    '#8FBCBB'
-#      white:   '#ECEFF4'
-#}}}
-
-
-# Colors (Gruvbox light)
-#colors:
-  ## Default colors
-  #primary:
-    ## hard contrast: background = '#f9f5d7'
-    ## background: '#f9f5d7'
-    #background: '#fbf1c7'
-    ## background: '#f2e5bc'
-    ## soft contrast: background = '#f2e5bc'
-    #foreground: '#3c3836'
-
-  ## Normal colors
-  #normal:
-    #black:   '#f2e5bc'
-    #red:     '#cc241d'
-    #green:   '#98971a'
-    #yellow:  '#d79921'
-    #blue:    '#458588'
-    #magenta: '#b16286'
-    #cyan:    '#689d6a'
-    #white:   '#7c6f64'
-
-  ## Bright colors
-  #bright:
-    #black:   '#928374'
-    #red:     '#9d0006'
-    #green:   '#79740e'
-    #yellow:  '#b57614'
-    #blue:    '#076678'
-    #magenta: '#8f3f71'
-    #cyan:    '#427b58'
-    #white:   '#3c3836'
-# Colors (Gruvbox dark)
-#colors:
-  ## Default colors
-  #primary:
-    ## hard contrast: background = '#1d2021'
-    #background: '#282828'
-    ## soft contrast: background = '#32302f'
-    #foreground: '#ebdbb2'
-
-  ## Normal colors
-  #normal:
-    #black:   '#282828'
-    #red:     '#cc241d'
-    #green:   '#98971a'
-    #yellow:  '#d79921'
-    #blue:    '#458588'
-    #magenta: '#b16286'
-    #cyan:    '#689d6a'
-    #white:   '#a89984'
-
-  ## Bright colors
-  #bright:
-    #black:   '#928374'
-    #red:     '#fb4934'
-    #green:   '#b8bb26'
-    #yellow:  '#fabd2f'
-    #blue:    '#83a598'
-    #magenta: '#d3869b'
-    #cyan:    '#8ec07c'
-    #white:   '#ebdbb2'
-#
 # Font configuration (changes require restart)
 font:
   # The normal (roman) font face to use.
@@ -219,13 +44,13 @@ font:
   bold:
     family: Noto Sans Mono
     # Style can be specified to pick a specific face.
-    # style: Bold
+    style: Bold
 
   # The italic font face
   italic:
     family: Noto Sans Mono
     # Style can be specified to pick a specific face.
-    # style: Italic
+    style: Italic
 
 mouse:
   hide_when_typing: true
