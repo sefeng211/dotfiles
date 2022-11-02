@@ -5,6 +5,8 @@ window:
   opacity: 0.95
   decorations: 'none'
 
+draw_bold_text_with_bright_colors: true
+
 colors:
   # Default colors
   primary:
@@ -24,7 +26,8 @@ colors:
 
   # Bright colors
   bright:
-    black:   '#262a3f'
+    # black:   '#262a3f'
+    black:   '#8389a3'
     red:     '#cc3768'
     green:   '#598030'
     yellow:  '#b6662d'
@@ -39,22 +42,22 @@ font:
   normal:
     family: Noto Sans Mono
     # Style can be specified to pick a specific face.
-    style: Regular
+    # style: Regular
   size: 15
   # The bold font face
   bold:
     family: Noto Sans Mono
     # Style can be specified to pick a specific face.
-    style: Bold
+    # style: Bold
 
   # The italic font face
   italic:
     family: Noto Sans Mono
     # Style can be specified to pick a specific face.
-    style: Italic
+    # style: Italic
 
 mouse:
   hide_when_typing: true
 
 selection:
-  save_to_clipboard: false
+  save_to_clipboard: true
