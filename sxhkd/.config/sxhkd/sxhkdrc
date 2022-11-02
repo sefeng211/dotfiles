@@ -1,6 +1,9 @@
 # Window Manager Navigation
-alt + shift + equal
-	sxiv -rt "$HOME/image"
+alt + shift + minus
+    i3-msg move scratchpad
+
+alt + minus
+    is-msg scratchpad show
 
 alt + {h,j,k,l}
     i3-msg focus {left,down,up,right}

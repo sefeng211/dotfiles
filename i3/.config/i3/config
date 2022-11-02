@@ -531,5 +531,4 @@ exec --no-startup-id sxhkd
 
 exec --no-startup-id ~/.dropbox-dist/dropboxd
 
-
 # exec --no-startup-id redshift-gtk
