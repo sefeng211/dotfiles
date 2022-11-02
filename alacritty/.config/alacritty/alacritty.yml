@@ -15,18 +15,17 @@ colors:
 
   # Normal colors
   normal:
-    black:   '#33374c'
+    black:   '#dcdfe7'
     red:     '#cc517a'
     green:   '#668e3d'
     yellow:  '#c57339'
     blue:    '#2d539e'
     magenta: '#7759b4'
     cyan:    '#3f83a6'
-    white:   '#dcdfe7'
+    white:   '#33374c'
 
   # Bright colors
   bright:
-    # black:   '#262a3f'
     black:   '#8389a3'
     red:     '#cc3768'
     green:   '#598030'
@@ -34,7 +33,7 @@ colors:
     blue:    '#22478e'
     magenta: '#6845ad'
     cyan:    '#327698'
-    white:   '#8389a3'
+    white:   '#262a3f'
 
 # Font configuration (changes require restart)
 font:
