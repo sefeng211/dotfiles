@@ -1,4 +1,4 @@
--- For mozilla related directory, I want to use FZF's 
+-- For mozilla related directory, I want to use FZF's
 -- `Files` because it's fast. Hopefully in the future, I
 -- can fully migrate to Telescope
 function fuzzy_find_file()
@@ -7,7 +7,7 @@ function fuzzy_find_file()
 	vim.api.nvim_command("Files")
     else
 	vim.api.nvim_command("Telescope find_files")
-    end 
+    end
 end
 
 return {
