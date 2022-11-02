@@ -34,8 +34,8 @@ alt + space
 alt + u
     i3-msg fullscreen toggle
 
-alt + {s,t}
-    i3-msg layout {stacking,tabbed}
+alt + {s,t,p}
+    i3-msg layout {stacking,tabbed, toggle split}
 
 alt + shift + r
     i3-msg restart
@@ -49,6 +49,14 @@ shift + ctrl + space
 
 alt + shift + v
     rofi -show emoji
+
+shift + ctrl + {h,k,j,l}
+    i3-msg resize { \
+        shrink width 10 px or 10 ppt,\
+        grow height 10 px or 10 ppt,\
+        shrink height 10 px or 10 ppt,\
+        grow width 10 px or 10 ppt,\
+    }
 
 # Misc
 @alt + Return
