@@ -532,6 +532,5 @@ exec --no-startup-id sxhkd
 exec --no-startup-id ~/.dropbox-dist/dropboxd
 
 exec i3-msg workspace $ws1
-
 # exec --no-startup-id redshift-gtk
 
