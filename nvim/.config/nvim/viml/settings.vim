@@ -145,3 +145,7 @@ hi VimwikiHeader6 guifg=#A3BE8C
 
 let g:leetcode_browser = 'firefox'
 let g:leetcode_solution_filetype = 'python'
+
+let g:mkdp_browser = '/home/sefeng/.local/bin/firefox-nightly'
+
+
