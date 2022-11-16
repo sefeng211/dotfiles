@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [[ -z "$(ip link show | grep 'wg0')" ]]
+then
+    echo "WIREGUARD OFF"
+else
+    echo "WIREGUARD ON"
+fi
+
