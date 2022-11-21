@@ -11,3 +11,4 @@ export SCCACHE_CACHE_SIZE="80G"
 
 export BAT_THEME="Solarized (light)"
 source "$HOME/.cargo/env"
+. "$HOME/.cargo/env"
