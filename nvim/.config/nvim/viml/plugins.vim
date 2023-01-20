@@ -25,9 +25,6 @@ Plug 'tjdevries/express_line.nvim'
 " Better c++ syntax
 Plug 'octol/vim-cpp-enhanced-highlight'
 
-" Format c/c++ code easier
-" Plug 'rhysd/vim-clang-format'
-
 " Telescope!!
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -73,10 +70,7 @@ Plug 'nvim-neorg/neorg'
 
 " LSP Related
 Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'saadparwaiz1/cmp_luasnip'
-Plug 'L3MON4D3/LuaSnip'
+Plug 'deoplete-plugins/deoplete-lsp'
 
 " Color Scheme
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
@@ -85,6 +79,12 @@ Plug 'cocopon/iceberg.vim'
 
 " Color syntax for sxhkdrc
 Plug 'baskerville/vim-sxhkdrc'
+
+"Snippet
+Plug 'SirVer/ultisnips'
+" Snippets are separated from the engine. Add this if you want them:
+Plug 'honza/vim-snippets'
+Plug 'fhill2/telescope-ultisnips.nvim'
 
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 

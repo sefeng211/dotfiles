@@ -148,4 +148,6 @@ let g:leetcode_solution_filetype = 'python'
 
 let g:mkdp_browser = '/home/sefeng/.local/bin/firefox-nightly'
 
-
+let g:UltiSnipsExpandTrigger="<leader><Tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"

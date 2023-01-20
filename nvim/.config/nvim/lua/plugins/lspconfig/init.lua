@@ -3,7 +3,6 @@ require'lspconfig'.clangd.setup{ }
 
 -- Add additional capabilities supported by nvim-cmp
 -- local capabilities = vim.lsp.protocol.make_client_capabilities()
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
 local lspconfig = require('lspconfig')
 
 -- Use an on_attach function to only map the following keys
@@ -41,7 +40,6 @@ local servers = { 'clangd', 'rust_analyzer', 'pyright', 'tsserver' }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
-    capabilities = capabilities,
     debounce_text_changes = 150,
   }
 end

@@ -20,6 +20,5 @@ endfun
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 autocmd FileType TelescopePrompt call deoplete#custom#buffer_option('auto_complete', v:false)
-autocmd FileType c,cpp,rust,hpp,h,python call deoplete#custom#buffer_option('auto_complete', v:false)
 autocmd FileType javascript,html setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 au BufReadPost,BufNewFile *.wiki TagbarOpen
