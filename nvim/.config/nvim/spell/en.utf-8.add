@@ -98,3 +98,8 @@ AsyncBlockResponse
 anonymized
 aChannel
 DOM
+devtools
+nsTObserverArray
+validator
+subtests
+synchronous
