@@ -4,6 +4,11 @@ color=#f8f8f2
 separator_block_width=15
 markup=pango
 
+[WireguardStatus]
+command=wireguard_status
+interval=2
+color=#FEC926
+
 [Task]
 command=tt agenda today | awk 'NF>0' | wc -l
 interval=2
