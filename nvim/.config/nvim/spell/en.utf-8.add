@@ -103,3 +103,8 @@ nsTObserverArray
 validator
 subtests
 synchronous
+mImageLCPEntryMap
+mTextLCPEntryMap
+mTextFrameUnions
+webrender
+textFrames

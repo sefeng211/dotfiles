@@ -40,10 +40,6 @@ noremap <leader>7 7gt
 noremap <leader>8 8gt
 noremap <leader>9 9gt
 
-" YouCompleteMe(YCM)
-nnoremap <C-]> :YcmCompleter GoToImprecise<CR>
-nnoremap <Leader>cr :YcmCompleter RefactorRename<space>
-
 " AsyncTask
 nnoremap <Leader>pc :AsyncTask project-build<CR>
 nnoremap <Leader>pr :AsyncTask project-run<CR>
