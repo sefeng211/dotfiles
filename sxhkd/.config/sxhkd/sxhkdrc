@@ -71,6 +71,9 @@ shift + ctrl + {h,k,j,l}
 @alt + Return
     alacritty
 
+alt + shift + Return
+    alacritty -e vifm
+
 alt + o ; {f,t,a}
 	{firefox-nightly,thunderbird, alsamixer}
 
