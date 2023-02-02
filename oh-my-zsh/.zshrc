@@ -135,6 +135,7 @@ alias n='nnn -e -a -d'
 
 alias vim='nvim'
 alias vimdiff="nvim -d"
+alias vi="vifm"
 alias t="task"
 
 # alias cat='bat'
