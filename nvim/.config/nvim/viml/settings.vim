@@ -28,11 +28,11 @@ endif
 
 syntax enable
 " {{ Removed at Jan 7th, 2022
-" colorscheme nord
+colorscheme nord
 " }}
 
 set background=light
-colorscheme iceberg
+" colorscheme iceberg
 " Required to make the background transparent
 " This makes Vim to use the same background as the terminal
 hi Normal guibg=NONE ctermbg=NONE

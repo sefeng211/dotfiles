@@ -2,6 +2,7 @@ call plug#begin("~/.nvim/plugged")
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
+
 " Quickfix
 Plug 'kevinhwang91/nvim-bqf' " Provides preview and some handy mappings
 Plug 'romainl/vim-qf' " Provides functions to toggle quickfix etc
@@ -19,6 +20,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'christoomey/vim-tmux-navigator'
 
+Plug 'arcticicestudio/nord-vim'
 " Use for status bar
 Plug 'tjdevries/express_line.nvim'
 
