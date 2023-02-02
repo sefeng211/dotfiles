@@ -58,8 +58,9 @@ Plug 'derekwyatt/vim-fswitch'
 Plug 'szw/vim-maximizer'
 
 Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-commentary'
 Plug 'alvan/vim-closetag'
+
+Plug 'preservim/nerdcommenter'
 
 Plug 'ianding1/leetcode.vim'
 
