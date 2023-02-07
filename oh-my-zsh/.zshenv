@@ -9,6 +9,6 @@ export PATH="$PATH:~/.local/bin"
 export SCCACHE_DIR=~/.cache/sccache
 export SCCACHE_CACHE_SIZE="80G"
 
-export BAT_THEME="Solarized (light)"
+export BAT_THEME="ansi"
 source "$HOME/.cargo/env"
 . "$HOME/.cargo/env"

@@ -68,6 +68,8 @@ shift + ctrl + {h,k,j,l}
     }
 
 # Misc
+# @alt + Return
+#     alacritty
 @alt + Return
     alacritty
 

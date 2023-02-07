@@ -510,14 +510,10 @@ bindsym $mod+Ctrl+k move workspace to output up
 
 bindsym Mod4+p exec toggle_pomo
 
-# Start compton compositor
-exec --no-startup-id picom --backend xrender --config ~/.config/compton/compton.conf
+exec --no-startup-id autorandr --load desktopdual
 
 # Start fcitx
 exec --no-startup-id fcitx5 -d
-
-# Set the wallpaper
-exec --no-startup-id feh --bg-fill ~/.local/pics/wallpaper/slow_poke.jpg
 
 # Map the capslock key to control
 exec --no-startup-id setxkbmap -option caps:ctrl_modifier
@@ -531,8 +527,12 @@ exec --no-startup-id sxhkd
 
 exec --no-startup-id nextcloud
 exec --no-startup-id ~/.dropbox-dist/dropboxd
-exec --no-startup-id feh --bg-fill ~/.local/images/Images/background/ign-0011.png
-
 exec i3-msg workspace $ws1
+# Set the wallpaper
+exec --no-startup-id sleep 5 && feh --bg-fill ~/.local/pics/wallpaper/gengar.jpg
+
+# Start compton compositor
+exec --no-startup-id sleep 5 && picom --backend xrender --config ~/.config/compton/compton.conf
+
 # exec --no-startup-id redshift-gtk
 
