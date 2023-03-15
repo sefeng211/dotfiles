@@ -1,6 +1,6 @@
 let mapleader = ","
 
-imap jj <Esc>
+" imap jj <Esc>
 
 " Speical case to use either telescope or fzf depends on the current working
 " directory
