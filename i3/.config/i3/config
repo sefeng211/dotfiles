@@ -529,10 +529,10 @@ exec --no-startup-id nextcloud
 exec --no-startup-id ~/.dropbox-dist/dropboxd
 exec i3-msg workspace $ws1
 # Set the wallpaper
-exec --no-startup-id sleep 5 && feh --bg-fill ~/.local/pics/wallpaper/gengar.jpg
+exec --no-startup-id sleep 7 && feh --bg-fill ~/.local/pics/wallpaper/gengar.jpg
 
 # Start compton compositor
-exec --no-startup-id sleep 5 && picom --backend xrender --config ~/.config/compton/compton.conf
+exec --no-startup-id sleep 6 && picom --backend xrender --config ~/.config/compton/compton.conf
 
 # exec --no-startup-id redshift-gtk
 

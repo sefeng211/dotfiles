@@ -189,3 +189,5 @@ export WASMER_DIR="$HOME/.wasmer"
 alias wgu='sudo wg-quick up'
 alias wgd='sudo wg-quick down'
 alias wgs='sudo wg show'
+
+alias ls='nnn -de'

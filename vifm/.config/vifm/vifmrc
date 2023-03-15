@@ -7,6 +7,7 @@ set relativenumber
 set wildmenu
 " Show hidden files on default
 set dotfiles
+
 set suggestoptions=normal,visual,view,otherpane,keys,marks,registers
 
 " Ignore case in search patterns unless it contains at least one uppercase
@@ -98,6 +99,10 @@ filextype {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
         \ shotwell,
 fileviewer {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
          \ identify %f
+
+" Markdown
+fileviewer *.md glow %c
+
 highlight Border cterm=reverse ctermfg=none ctermbg=none
 
 nnoremap M :marks<cr>
