@@ -130,8 +130,7 @@ alias machde="./mach run --debugger=rr --disable-e10s"
 # Taskwarrior related
 #alias in='task add +in'
 
-alias nnn='nnn -e -a -d'
-alias n='nnn -e -a -d'
+alias n='nnn -e -a -d -H'
 
 alias vim='nvim'
 alias vimdiff="nvim -d"
