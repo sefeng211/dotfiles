@@ -82,3 +82,6 @@ alt + o ; {f,t,a}
 alt + r ; s
     pkill sxhkd && sxhkd &
 
+~j + ~k
+    trigger_fcitx
+

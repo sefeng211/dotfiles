@@ -1,6 +1,6 @@
 let mapleader = ","
 
-" imap jj <Esc>
+imap jk <Esc>
 
 " Speical case to use either telescope or fzf depends on the current working
 " directory
@@ -69,8 +69,8 @@ nnoremap <A-,> <C-W>5>
 nnoremap <A-.> <C-W>5<
 
 " Sizing window vertically taller
-nnoremap <A-t> <C-W>+ " shorter
-nnoremap <A-s> <C-W>-
+" nnoremap <A-t> <C-W>+ " shorter
+" nnoremap <A-s> <C-W>-
 
 " Switch from terminal mode to normal mode
 tnoremap <leader><leader> <C-\><C-n>
