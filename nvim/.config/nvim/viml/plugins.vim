@@ -90,4 +90,6 @@ Plug 'fhill2/telescope-ultisnips.nvim'
 
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
+Plug 'sefeng211/jk.vim', { 'do': 'pip install pynput' }
+
 call plug#end()
