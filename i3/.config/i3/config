@@ -534,7 +534,5 @@ exec --no-startup-id sleep 7 && feh --bg-fill ~/.local/pics/wallpaper/gengar.jpg
 # Start compton compositor
 exec --no-startup-id sleep 6 && picom --backend xrender --config ~/.config/compton/compton.conf
 
-exec --no-startup-id python ~/dotfiles/scripts/key2.py
-
 # exec --no-startup-id redshift-gtk
 
