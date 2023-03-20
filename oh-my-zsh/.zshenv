@@ -1,4 +1,4 @@
-export NNN_PLUG='i:imgview;p:preview-tabbed;t:preview-tui;z:fzcd;f:fzopen;b:bookmarks'
+export NNN_PLUG='i:imgview;p:preview-tabbed;t:preview-tui;z:fzcd;f:fzopen;b:bookmarks;c:cdpath'
 export NNN_BMS='i:~/.local/pics;w:~/.local/wiki;v:~/.local/workspace/videos'
 export NNN_SEL='/tmp/.sel'
 export NNN_FIFO='/tmp/nnn.fifo'
