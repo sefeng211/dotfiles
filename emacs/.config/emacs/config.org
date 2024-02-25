@@ -1,0 +1,13 @@
+#+TITLE: Sean's GNU Emacs Config
+
+** Evil Mode
+#+begin_src emacs-lisp
+  ;; Download Evil
+  (unless (package-installed-p 'evil)
+    (package-install 'evil))
+
+  ;; Enable Evil
+  (require 'evil)
+  (evil-mode 1)
+#+end_src
+
