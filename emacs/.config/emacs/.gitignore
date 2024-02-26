@@ -1,0 +1,7 @@
+auto-save-list/
+config.el
+elpa/
+projectile*
+history
+recentf
+transient/

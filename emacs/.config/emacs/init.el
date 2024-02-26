@@ -12,15 +12,11 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
-;; a list of pkgs to programmatically install
-;; ensure installed via package.el
-(setq my-package-list '(use-package))
-
-;; programmatically install/ensure installed
-;; pkgs in your personal list
-(dolist (package my-package-list)
-  (unless (package-installed-p package)
-    (package-install package)))
+;; bootstrap use-package
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+(require 'use-package)
 
 ; Use config.org as the config file for my emacs
 (org-babel-load-file
