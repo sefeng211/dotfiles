@@ -6,6 +6,7 @@
   (menu-bar-mode -1)
   (tool-bar-mode -1)
   (scroll-bar-mode -1)
+  (blink-cursor-mode 0)
   ; Display Line Numbers and Truncated Lines
   (global-display-line-numbers-mode 1)
   (setq display-line-numbers-type 'relative)
@@ -16,9 +17,19 @@
   (setq visible-bell t)
 #+end_src
 
+** User-defined macros
+#+begin_src emacs-lisp
+(defmacro make-neutral (map)
+  "Create evil-style window movement for a given MAP."
+  `(progn
+     (define-key ,map (kbd "C-j") 'evil-window-down)
+     (define-key ,map (kbd "C-k") 'evil-window-up)
+     (define-key ,map (kbd "C-h") 'evil-window-left)
+     (define-key ,map (kbd "C-l") 'evil-window-right)))
+#+end_src
 ** Evil Mode
 #+begin_src emacs-lisp
-; Leader
+  ; Leader
 (use-package evil
   :ensure t ;; install the evil package if not installed
   :init ;; tweak evil's configuration before loading it
@@ -29,11 +40,13 @@
   (setq evil-split-window-below t)
   (setq evil-shift-round nil)
   (setq evil-want-C-u-scroll t)
-  ; For evil collection 
+  ; For evil collection
   (setq evil-want-integration t) ;; This is optional since it's already set to t by default.
   (setq evil-want-keybinding nil)
+  (setq evil-undo-system 'undo-redo)
   :config ;; tweak evil after loading it
-  (evil-mode))
+  (evil-mode)
+  (make-neutral evil-normal-state-map))
 #+end_src
 
 ** Evil Collection
@@ -45,40 +58,57 @@
   (evil-collection-init))
 #+end_src
 
-** General
+** Evil Escape
 #+begin_src emacs-lisp
-(define-prefix-command 'my-leader-map)
-(use-package general
-  :ensure t
-  :init
-  (setq general-override-states '(insert
-                                  emacs
-                                  hybrid
-                                  normal
-                                  visual
-                                  motion
-                                  operator
-                                  replace))
-  :config
-  (general-define-key
-   :states '(normal visual motion)
-   :keymaps 'override
-   "," 'my-leader-map))
-
-(evil-define-key nil my-leader-map
-    ;; add your bindings here:
-    "b"  'switch-to-buffer
-    "B"  'project-switch-to-buffer
-    "pf" 'project-find-file
-    "ps" 'project-shell-command
-    "rf" 'recentf-open
-    "rse" 'restart-emacs
-    ;; etc.
-    )
+(use-package evil-escape
+ :ensure t
+ :init
+ (setq-default evil-escape-key-sequence "jk")
+ :config
+ (evil-escape-mode t))
 #+end_src
 
-** Nord Theme
-  (projectile-mode +1))
+** General
+#+begin_src emacs-lisp
+  (define-prefix-command 'my-leader-map)
+  (use-package general
+    :ensure t
+    :init
+    (setq general-override-states '(insert
+				    emacs
+				    hybrid
+				    normal
+				    visual
+				    motion
+				    operator
+				    replace))
+    :config
+    (general-define-key
+     :states '(normal visual motion)
+     :keymaps 'override
+     "," 'my-leader-map))
+
+(evil-define-key nil my-leader-map
+  ;; add your bindings here:
+  "B"  'project-switch-to-buffer
+  "pf" 'project-find-file
+  "rf" 'recentf-open
+  "rse" 'restart-emacs
+  ; Projectile related
+  "pf" 'projectile-find-file
+  "ps" 'projectile-switch-project
+  ; Buffer
+  "bb" 'switch-to-buffer
+  ;; etc.
+  )
+#+end_src
+
+** Nord theme
+#+begin_src emacs-lisp
+(use-package nord-theme
+  :ensure t
+  :config
+  (load-theme 'nord t))
 #+end_src
 
 ** Vertico + Savehist + Emacs
@@ -141,4 +171,12 @@
  :init
  (setq recentf-max-menu-items 25)
  (setq recentf-max-saved-items 25))
+#+end_src
+
+** Which-key
+#+begin_src emacs-lisp
+(use-package which-key
+ :ensure t
+ :config
+ (which-key-mode))
 #+end_src
