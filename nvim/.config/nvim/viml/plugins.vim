@@ -9,7 +9,7 @@ Plug 'romainl/vim-qf' " Provides functions to toggle quickfix etc
 Plug 'junegunn/goyo.vim'
 Plug 'preservim/tagbar'
 
-Plug 'lilydjwg/fcitx.vim', { 'branch': 'fcitx5' }
+" Plug 'lilydjwg/fcitx.vim', { 'branch': 'fcitx5' }
 
 Plug 'vimwiki/vimwiki'
 " FZF support
@@ -46,6 +46,8 @@ Plug 'mcchrish/nnn.vim'
 
 Plug 'kyazdani42/nvim-web-devicons'
 
+Plug 'tpope/vim-fugitive'
+
 Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
 Plug 'rust-lang/rust.vim'
@@ -75,9 +77,9 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'deoplete-plugins/deoplete-lsp'
 
 " Color Scheme
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+" Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'casonadams/nord.vim'
-Plug 'cocopon/iceberg.vim'
+" Plug 'cocopon/iceberg.vim'
 
 " Color syntax for sxhkdrc
 Plug 'baskerville/vim-sxhkdrc'
@@ -91,5 +93,7 @@ Plug 'fhill2/telescope-ultisnips.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
 Plug 'sefeng211/jk.vim', { 'do': 'pip install pynput' }
+
+Plug 'github/copilot.vim'
 
 call plug#end()

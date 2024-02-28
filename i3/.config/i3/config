@@ -510,7 +510,7 @@ bindsym $mod+Ctrl+k move workspace to output up
 
 bindsym Mod4+p exec toggle_pomo
 
-exec --no-startup-id autorandr --load desktopdual
+# exec --no-startup-id autorandr --load desktopdual
 
 # Start fcitx
 exec --no-startup-id fcitx5 -d

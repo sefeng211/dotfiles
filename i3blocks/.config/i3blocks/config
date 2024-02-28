@@ -10,7 +10,7 @@ interval=2
 color=#FEC926
 
 [Task]
-command=tt agenda today | awk 'NF>0' | wc -l
+command=/home/sefeng/dotfiles/scripts/taskoo_agenda.sh
 interval=2
 color=#C9E3DB
 

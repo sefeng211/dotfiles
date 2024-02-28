@@ -1,6 +1,3 @@
-require'lspconfig'.clangd.setup{ }
-
-
 -- Add additional capabilities supported by nvim-cmp
 -- local capabilities = vim.lsp.protocol.make_client_capabilities()
 local lspconfig = require('lspconfig')
@@ -32,17 +29,26 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
   buf_set_keymap('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
   buf_set_keymap('n', '<space>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
-  buf_set_keymap('n', '<leader>cf', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
+  buf_set_keymap('n', '<leader>cf', '<cmd>lua vim.lsp.buf.format({ async = true })<CR>', opts)
   buf_set_keymap('n', '<leader>ee', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
 end
 
 -- Enable some language servers with the additional completion capabilities offered by nvim-cmp
-local servers = { 'html', 'clangd', 'rust_analyzer', 'pyright', 'tsserver' }
+local servers = { 'html', 'rust_analyzer', 'pyright', 'tsserver' }
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
     debounce_text_changes = 150,
   }
+
+-- clangd specific setup
+lspconfig.clangd.setup {
+  on_attach = on_attach,
+  cmd = {
+    "clangd",
+    "--offset-encoding=utf-16",
+  },
+}
 end
 
 vim.o.completeopt = 'menuone,noselect'
