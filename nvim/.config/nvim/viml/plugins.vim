@@ -94,6 +94,8 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
 Plug 'sefeng211/jk.vim', { 'do': 'pip install pynput' }
 
-Plug 'github/copilot.vim'
+" Plug 'github/copilot.vim'
+
+Plug 'sindrets/diffview.nvim'
 
 call plug#end()

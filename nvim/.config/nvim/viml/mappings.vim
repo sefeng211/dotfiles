@@ -41,7 +41,9 @@ noremap <leader>8 8gt
 noremap <leader>9 9gt
 
 " AsyncTask
-nnoremap <Leader>pc :AsyncTask project-build<CR>
+nnoremap <Leader>mbd :AsyncTask moz-build-debug<CR>
+nnoremap <Leader>mbr :AsyncTask moz-build-release<CR>
+nnoremap <Leader>ps :AsyncStop<CR>
 nnoremap <Leader>pr :AsyncTask project-run<CR>
 nnoremap <Leader>pt :AsyncTask project-test<CR>
 
@@ -77,15 +79,22 @@ tnoremap <leader><leader> <C-\><C-n>
 
 " Quickfix
 " noremap <leader>cn :cnext<CR>
-" noremap <leader>cl :clast<CR>
-" noremap <leader>co :copen<CR>
-" noremap <leader>cs :cfirst<CR> :cnext<CR>
-" noremap <leader>cp :cprevious<CR>
-" noremap <leader>cc :cclose<CR>
+noremap <leader>cl :clast<CR>
+noremap <leader>cs :cfirst<CR> :cnext<CR>
+noremap <leader>cp :cprevious<CR>
+function! ToggleQuickFix()
+    if empty(filter(getwininfo(), 'v:val.quickfix'))
+        copen
+    else
+        cclose
+    endif
+endfunction
 
-noremap <leader>cp <Plug>(qf_qf_previous)
-noremap <leader>cn <Plug>(qf_qf_next)
-noremap <leader>co <Plug>(qf_qf_toggle)
+nnoremap <leader>qq :call ToggleQuickFix()<cr>
+
+noremap <leader>qp <Plug>(qf_qf_previous)
+noremap <leader>qn <Plug>(qf_qf_next)
+noremap <leader>qo <Plug>(qf_qf_toggle)
 
 
 nmap [l <Plug>qf_loc_previous

@@ -148,3 +148,17 @@ ReduceTimePrecisionAsMSecs
 aForDocumentNavigation
 frameset
 activeElement
+ContentSubtreeIterator
+GetParentOrShadowHostNode
+CacheInclusiveAncestorsOfEndContainer
+UA
+mCrossShadowBoundaryRange
+aRange
+AbstractRange
+Unmark
+ajudsted
+aBoundary
+SpecialPowers
+hashtable
+unselectable
+selectable
