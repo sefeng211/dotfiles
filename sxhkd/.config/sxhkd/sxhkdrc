@@ -76,8 +76,9 @@ shift + ctrl + {h,k,j,l}
 alt + shift + Return
     alacritty -e vifm
 
-alt + o ; {f,t,a}
-	{firefox-nightly,thunderbird, alsamixer}
+alt + o ; {f,t,a,l}
+	{firefox-nightly,thunderbird, alsamixer, i3lock -i ~/.local/images/i3lock_background.png}
 
 alt + r ; s
     pkill sxhkd && sxhkd &
+

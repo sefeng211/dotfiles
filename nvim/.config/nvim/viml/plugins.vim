@@ -16,10 +16,8 @@ Plug 'vimwiki/vimwiki'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 "
-Plug 'arcticicestudio/nord-vim'
 Plug 'christoomey/vim-tmux-navigator'
 
-Plug 'arcticicestudio/nord-vim'
 " Use for status bar
 Plug 'tjdevries/express_line.nvim'
 
@@ -78,8 +76,10 @@ Plug 'deoplete-plugins/deoplete-lsp'
 
 " Color Scheme
 " Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
-Plug 'casonadams/nord.vim'
+" Plug 'casonadams/nord.vim'
+" Plug 'shaunsingh/nord.nvim'
 " Plug 'cocopon/iceberg.vim'
+Plug 'andersevenrud/nordic.nvim'
 
 " Color syntax for sxhkdrc
 Plug 'baskerville/vim-sxhkdrc'
