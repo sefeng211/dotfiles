@@ -224,3 +224,8 @@ n ()
 
 [ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"
 
+
+
+export JAVA_HOME="/home/sefeng/.mozbuild/jdk/jd-17.0.11+9"
+export ANDROID_HOME="/home/sefeng/.mozbuild/android-sdk-linux"
+

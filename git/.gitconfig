@@ -1,5 +1,5 @@
 [cinnabar]
-	version-check = 1725389338
+	version-check = 1729795003
 	helper = /home/saber/.mozbuild/git-cinnabar/git-cinnabar-helper
 [user]
 	email = sean@seanfeng.dev

@@ -51,13 +51,13 @@ alt + shift + r
 
 # ROFI
 alt + n
-    rofi -show window
+    rofi -font "monospace 30" -show window
 
 shift + ctrl + space
-    rofi -show run
+    rofi -font "monospace 30" -show run
 
 alt + shift + v
-    rofi -show emoji
+    rofi -font "monospace 30" -show emoji
 
 shift + ctrl + {h,k,j,l}
     i3-msg resize { \
