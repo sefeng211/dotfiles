@@ -68,13 +68,11 @@ shift + ctrl + {h,k,j,l}
     }
 
 # Misc
-# @alt + Return
-#     alacritty
 @alt + Return
-    alacritty
+    kitty
 
 alt + shift + Return
-    alacritty -e vifm
+    kitty -e yazi
 
 alt + o ; {f,t,a,l}
 	{firefox-nightly,thunderbird, alsamixer, i3lock -i ~/.local/images/i3lock_background.png}
