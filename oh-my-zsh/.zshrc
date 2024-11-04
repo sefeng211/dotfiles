@@ -225,6 +225,15 @@ n ()
 [ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"
 
 
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
 
 export JAVA_HOME="/home/sefeng/.mozbuild/jdk/jd-17.0.11+9"
 export ANDROID_HOME="/home/sefeng/.mozbuild/android-sdk-linux"

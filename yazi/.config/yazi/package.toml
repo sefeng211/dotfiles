@@ -1,0 +1,5 @@
+[plugin]
+deps = [{ use = "yazi-rs/plugins:git", rev = "102a0cd" }, { use = "Ape/simple-status", rev = "709f653" }, { use = "yazi-rs/plugins:full-border", rev = "102a0cd" }, { use = "yazi-rs/plugins:jump-to-char", rev = "102a0cd" }, { use = "dedukun/relative-motions", rev = "1d6d686" }, { use = "Reledia/glow", rev = "388e847" }]
+
+[flavor]
+deps = [{ use = "dangooddd/kanagawa", rev = "b32f205" }]
