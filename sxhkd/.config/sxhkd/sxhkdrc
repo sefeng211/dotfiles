@@ -72,7 +72,7 @@ shift + ctrl + {h,k,j,l}
     kitty
 
 alt + shift + Return
-    kitty -e yazi
+    kitty -e y
 
 alt + o ; {f,t,a,l}
 	{firefox-nightly,thunderbird, alsamixer, i3lock -i ~/.local/images/i3lock_background.png}
