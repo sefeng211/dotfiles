@@ -4,7 +4,7 @@ imap jk <Esc>
 
 " Speical case to use either telescope or fzf depends on the current working
 " directory
-nnoremap <leader>ff :lua require('functions').fuzzy_find_file()<CR>
+nnoremap <leader>ff :FZF<CR>
 " FZF
 nnoremap <leader>fr :History <CR>
 nnoremap <leader>fc :History: <CR>

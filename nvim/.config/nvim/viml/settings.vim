@@ -32,6 +32,9 @@ syntax enable
 " }}
 
 set background=light
+let g:gruvbox_contrast_light='soft'
+let g:gruvbox_invert_selection=0
+colorscheme gruvbox
 " colorscheme iceberg
 " Required to make the background transparent
 " This makes Vim to use the same background as the terminal

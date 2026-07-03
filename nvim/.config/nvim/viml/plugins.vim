@@ -80,7 +80,7 @@ Plug 'hrsh7th/cmp-nvim-lsp'     " 让补全引擎能读取到 lspconfig (clangd)
 " Plug 'casonadams/nord.vim'
 " Plug 'shaunsingh/nord.nvim'
 " Plug 'cocopon/iceberg.vim'
-Plug 'andersevenrud/nordic.nvim'
+Plug 'morhetz/gruvbox'
 
 " Color syntax for sxhkdrc
 Plug 'baskerville/vim-sxhkdrc'

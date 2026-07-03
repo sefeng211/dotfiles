@@ -9,7 +9,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="intheloop"
+# ZSH_THEME="intheloop"
+ZSH_THEME="steeef"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -202,3 +203,8 @@ function y() {
 export JAVA_HOME="/home/sefeng/.mozbuild/jdk/jd-17.0.11+9"
 export ANDROID_HOME="/home/sefeng/.mozbuild/android-sdk-linux"
 
+export PATH="$HOME/.config/emacs/bin:$PATH"
+export FZF_DEFAULT_OPTS="
+  --color=bg+:#ebdbb2,bg:#fbf1c7,spinner:#cc241d,hl:#fb4934
+  --color=fg:#3c3836,header:#cc241d,info:#7c6f64,pointer:#cc241d
+  --color=marker:#cc241d,fg+:#3c3836,prompt:#d79921,hl+:#fb4934"
