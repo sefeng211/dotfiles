@@ -72,7 +72,8 @@ Plug 'nvim-neorg/neorg'
 
 " LSP Related
 Plug 'neovim/nvim-lspconfig'
-Plug 'deoplete-plugins/deoplete-lsp'
+Plug 'hrsh7th/nvim-cmp'         " 现代补全引擎核心
+Plug 'hrsh7th/cmp-nvim-lsp'     " 让补全引擎能读取到 lspconfig (clangd) 的数据
 
 " Color Scheme
 " Plug 'folke/tokyonight.nvim', { 'branch': 'main' }

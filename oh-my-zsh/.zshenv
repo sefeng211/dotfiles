@@ -10,5 +10,5 @@ export SCCACHE_DIR=~/.cache/sccache
 export SCCACHE_CACHE_SIZE="80G"
 
 export BAT_THEME="ansi"
-source "$HOME/.cargo/env"
-. "$HOME/.cargo/env"
+# source "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"

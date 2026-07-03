@@ -8,4 +8,11 @@ set rtp+=~/.config/nvim/viml
 
 lua << EOF
 require('config')
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "c", "cpp" , "h", "hpp" },
+  callback = function()
+    vim.bo.equalprg = "clang-format -style=file"
+  end,
+})
 EOF
