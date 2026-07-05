@@ -180,6 +180,7 @@ export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.mozbuild/clang/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Wasmer
 export WASMER_DIR="$HOME/.wasmer"
